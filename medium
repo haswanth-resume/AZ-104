@@ -1,0 +1,307 @@
+https://medium.com/@mmkr.scm/az-104-renewal-exam-questions-bb66a568631b
+
+1. You recently create an Azure virtual machine standard backup policy. You need to configure a retention period for virtual machine instant recovery snapshots.
+What is the maximum number of days that can be set for the retention period? Select only one answer.
+
+a. 5
+b. 7
+c. 14
+d. 30
+
+Correct Answer : a. 5
+
+2. You have the following Azure resources: a virtual machine named VM1 a Recovery Services vault named Vault1 On January 1, 
+you configure backups for VM1 by using the following backup policy: Frequency: Daily Time: 23:00 Timezone: (UTC) Coordinated Universal Time Retain instant recovery snapshot(s)
+for: 2 Day(s) Retention of daily backup point: 7 Day(s) Azure Backup Resource Group: 
+Backup1RG How many restore point collections recovery points will be stored in Backup1RG on January 10? 
+Select only one answer.
+
+a. 2
+b. 7
+c. 9
+d. 10
+
+Correct Answer: b. 7
+
+3. You have a Recovery Services vault named Recovery1 that includes a backup policy named Policy1. 
+You back up several Azure virtual machines to Recovery1 by using Policy1. You need to view the Azure Backup reports. What should you do first?
+Select only one answer.
+
+a. Configure the Diagnostics settings of Recovery1.
+b. Create an Azure Log Analytics workspace.
+c. Modify the Backup Configuration settings of Recovery1.
+
+Correct Answer: b. Create an Azure Log Analytics workspace.
+
+4. You have an Azure subscription that contains the following resources:
+A resource group named RG1 in the West US region
+A resource group named RG2 in the Central US region
+A virtual network named VNet1 that is deployed to the West US region in RG1
+A virtual network named VNet2 that is deployed to the Central US region in RG1
+A virtual network named VNet3 that is deployed to the West US region in RG2
+You need to deploy a virtual machine named VM1 to RG1 in the West US region.
+To which virtual network or virtual networks can you connect VM1?
+Select only one answer.
+
+a. VNet1 only
+b. VNet1 or VNet2 only
+c. VNet1 or VNet3 only
+d. VNet1, VNet2 or VNet3
+
+Correct Answer: c. VNet1 or VNet3 only
+
+5. You have an Azure subscription named Sub1. You plan to deploy a virtual machine scale set named VMSS1 in East US region. VMSS1 will have 8 instances. 
+What is the maximum number of availability zones that VMSS1 can use?
+Select only one answer.
+
+a. 1
+b. 2
+c. 3
+d. 4
+
+Correct Answer: c.3
+
+6. You have an Azure subscription. You plan to run a data warehouse in an Azure virtual machine named VM1. 
+You need to ensure that VM1 is optimized for running a data warehouse. Which VM type should you use for VM1?
+Select only one answer.
+
+a. Compute optimized (F-Series)
+b. General purpose (D-Series)
+c. High performance computing (H-Series)
+d. Memory optimized (M-Series)
+e. Storage optimized (Ls-Series)
+
+Correct Answer: d. Memory optimized (M-Series)
+
+7. You have a Microsoft Entra tenant. You create a user named Admin1. 
+You need to ensure that Admin1 can perform following tasks: 
+Assign licenses to Microsoft Entra groups Reset passwords of Microsoft Entra users What Microsoft Entra role should you add to Admin1?
+Select only one answer.
+
+a. Billing Administrator
+b. Helpdesk Administrator
+c. License Administrator
+d. User Administrator
+
+Correct Answer: d. User Administrator
+
+8. You have an Azure subscription that contains a user named User1, a resource group named RG1, and a virtual machine named VM1. You enable a system-assigned managed identity for VM1. To which identities can you assign the Reports Reader role?
+Select only one answer.
+
+a. User1 and RG1 only
+b. User1 and VM1 only
+c. User1 only
+d. User1, RG1, and VM1
+
+Correct Answer: b. User1 and VM1 only
+
+9. You have a Microsoft Entra tenant that contains a user named User1. You delete User1. You plan to restore the User1 object. 
+What is the maximum number of days you have to restore User1?
+Select only one answer.
+a. 7 days
+b. 30 days
+c. 90 days
+d. 48 hours
+
+Correct Answer: b. 30 days
+
+10. You have an Azure virtual machine named Computer5 and a Recovery Services vault named Vault5.
+Computer5 contains the following data disks: 
+DiskA has a size of 512 GB DiskB has a size of 30 TB DiskC has a size of 26 TB DiskD has a size of 2.0 TB Which data disks can you back up to Vault5? Select only one answer.
+
+a. DiskA, DiskB, DiskC, and DiskD
+b. DiskA only
+c. DiskB only
+d. DiskC only
+e. DiskD only
+
+Correct Answer: a. DiskA, DiskB, DiskC, and DiskD
+
+11. You have an Azure Subscription that includes the following resources: 
+· VNet1, a virtual network · Subnet1, a subnet in VNet1 · WebApp1, a web app application service
+· NSG1, a network security group You create an application security group named ASG1.
+
+Which resource can use ASG1?
+A) NSG1
+B) Subnet1
+C) VNet1
+D) WebApp1
+
+Correct Answer: A) NSG1
+
+12. You have an Azure subscription that includes following resources:
+VNet1, a virtual network Subnet1, a subnet in VNet1 VM1, a virtual machine NIC1, a network interface of VM1 LB1, a load balancer 
+You create a network security group named NSG1. To which two Azure resources can you associate NSG1? Select all answers that apply.
+
+a. LB1
+b. NIC1
+c. Subnet1
+d. VM1
+e. VNet1
+
+Correct Answers: b. NIC1 and c. Subnet1
+
+13. You have an Azure subscription that contains a virtual machine named VM1 and a storage account named storage1. 
+You need to ensure that VM1 can access storage1 by using the Azure backbone. What should you configure?
+Select only one answer.
+a. a routing table
+b. a service endpoint
+c. a VPN gateway Peering
+
+Correct Answer: b. a service endpoint
+
+14. You have an Azure storage account that contains a blob container named container1. You need to configure access to container1. Which authorization types can you use?
+Select only one answer.
+
+a. Microsoft Entra ID only
+b. Microsoft Entra ID, shared access signature or certificate only
+c. Microsoft Entra ID, storage key or shared access signature only
+d. Microsoft Entra ID, storage key, shared access signature or certificate Storage key or shared access signature only
+
+Correct Answer: d. Microsoft Entra ID, storage key, shared access signature or certificate Storage key or shared access signature only
+
+15. You have an Azure Storage account named storage1 that is configured to use the Hot access tier.
+Storage1 has a container named container1 and the lifecycle management rule with following settings: 
+Move blob to cool storage: Selected Days after last modification: 3 Move blob to archive storage: 
+Selected Days after last modification: 5 On December 1, you create a file named File1 in container1.
+On December 10, you rehydrate File1 and move the file to the Hot access tier. When will File1 be moved to archive storage?
+Select only one answer.
+
+a. on December 15
+b. on December 18
+c. on January 1
+d. within 24 hours
+
+Correct Answer: a. on December 15
+
+16. You plan to create an Azure container instance named container1 that will use a Docker image named Image1. 
+You need to ensure that container1 has persistent storage. Which Azure resources should you deploy for the persistent storage?
+Select only one answer.
+
+a. an Azure container registry
+b. an Azure SQL database
+c. an Azure Storage account and a blob container
+d. an Azure Storage account and a file share
+
+Correct Answer: d. an Azure Storage account and a file share
+
+17. You have azure web app named webapp1. you need to integrate github as a source code repository for webapp1. what should you use?
+select only one answer.
+
+a. deployment center
+b. deployment slots
+c. extensions
+d. service connector
+
+Correct Answer: a. deployment center
+
+18. You plan to deploy an Azure web app that will have the following settings:
+Name: WebApp1 Publish: Code Runtime stack: Java 11 Operating system
+Linux Continuous deployment: Disable You need to ensure that you can integrate WebApp1 with GitHub Actions. Which setting should you modify?
+Select only one answer.
+
+a. Continuous deployment
+b. Operating system
+c. Publish
+d. Runtime stack
+
+Correct Answer: a. Continuous deployment
+
+19. You have an Azure subscription. You plan to use fault domains. From which Azure resource can you configure the fault domains? 
+Select only one answer.
+
+a. Availability set
+b. Virtual machine
+c. Virtual machine scale set
+d. Virtual network
+
+Correct Answer: a. Availability set
+
+20. You have an Azure subscription that includes a virtual network named VNet1. You plan to create a web app named WebApp1 and deploy it to VNet1. You need to prepare the environment for the planned web app. The solution must minimize costs. Which app service plan size should you use? Select only one answer.
+
+a. Dev / Test B1
+b. Dev / Test F1
+c. Isolated I1V2
+d. Production P1V2
+e. Production P3V3
+
+Correct Answer: a. Dev / Test B1
+
+21. You have an Azure web service named Contoso2022 that runs in the Standard App Service plan. Contoso2022 has five deployment slots in use. 
+A user named User1 has the Contributor role for Contoso2022. 
+You need to ensure that User1 can create additional deployment slots to Contoso2022.
+What should you do? Select only one answer.
+
+a. Assign User1 the Owner role for Contoso2022.
+b. Assign User1 the Website Contributor role for Contoso2022.
+c. Scale out the Contoso2022 App Service plan.
+d. Scale up the Contoso2022 App Service plan.
+
+Correct Answer: Scale up the Contoso2022 App Service plan.
+
+22. You have an Azure container registry that stores an image named Image1 and a Windows Server 2022 Azure virtual machine named VM1. 
+You need to ensure that you can run Image1 in VM1. What should you install in VM1?
+Select only one answer.
+
+a. Azure Portal
+b. Docker
+c. Hyper-V role
+d. .NET Framework 4.7
+
+Correct Answer: Docker
+
+23. You have an Azure subscription that contains the following resources: 
+a storage account named storage123 a container instance named AppContainer The subscription contains a virtual network named VirtualNet4 that has the following subnets:
+SubnetA- has a Microsoft.Storage service endpoint.
+SubnetB- AppContainer is deployed to SubnetB.
+SubnetC- No resources are connected to SubnetC.
+You plan to deploy an Azure container instance named container5 to VirtualNet4. To which subnets can you deploy container5?
+Select only one answer.
+
+a. SubnetA, SubnetB, and SubnetC
+b. SubnetB and SubnetC only
+c. SubnetB only
+d. SubnetC only
+
+Correct Answer: d. SubnetC only
+
+24. You have an Azure storage account named storage1. 
+You need to ensure that a user named User1 can access storage1 only from January 1st to January 31st 2024. What should you do?
+Select only one answer.
+
+a. Create a conditional access policy for User1
+b. Provide User1 with a shared access signature (SAS)
+c. Provide User1 with a storage1 access key
+d. Use a condition when assigning User1 an RBAC role on storage1
+
+Correct Answer: b. Provide User1 with a shared access signature (SAS)
+
+25. You have an Azure subscription that contains the following storage accounts:
+storage1, configured as StorageV2 kind storage2, configured as BlobStorage kind storage3, 
+configured as FileStorage kind Which storage account or storage accounts can you use Lifecycle management?
+Select only one answer.
+
+a. storage1 and storage2 only
+b. storage1 and storage3 only
+c. storage1 only
+d. Storage1, storage2 and storage3
+e. storage2 and storage3 only
+
+Correct Answer: a. storage1 and storage2 only
+
+26. You have an Azure subscription that contains a storage account named storage1 and the following virtual machines:
+VM1 has a public IP address of 13.68.158.24 and is connected to VNET1/Subnet1 VM2 has a public IP address of 52.255.145.76 and
+is connected to VNET1/Subnet1 VM3 has a public IP address of 13.68.158.50 and is connected to VNET1/Subnet2 The subnets have the following service endpoints:
+Subnet1 has a Microsoft.Storage service endpoint
+Subnet2 does NOT have any service endpoint
+Storage1 has a firewall configured to allow access from the 13.68.158.0/24 IP address range only.
+Which virtual machines can access storage1.
+Select only one answer.
+
+a. VM1 and VM2 only
+b. VM1 and VM3 only
+c. VM1 only
+d. VM1, VM2, and VM3
+e. VM3 only
+
+Correct Answer: b. VM1 and VM3 only
