@@ -263,7 +263,7 @@ b. SubnetB and SubnetC only
 c. SubnetB only
 d. SubnetC only
 
-Correct Answer: d. SubnetC only
+Correct Answer: b. SubnetB and SubnetC only
 
 24. You have an Azure storage account named storage1. 
 You need to ensure that a user named User1 can access storage1 only from January 1st to January 31st 2024. What should you do?
