@@ -1,0 +1,21 @@
+1. You have an Azure subscription that includes a network security group named NSG1.
+You plan to add an inbound security rule named Rule1 to NSG1.
+You need to configure a priority for Rule1. Rule1 must have the highest priority for inbound security rules in NSG1.
+Which priority should you configure for Rule1?
+Select only one answer.
+
+0
+1
+10
+100
+1000
+Answer-100
+
+Explanation-
+Priority:
+-A number between 100 and 4096.
+-Rules are processed in priority order, with lower numbers processed before higher numbers, because lower numbers have higher priority.
+-Once traffic matches a rule, processing stops.
+-As a result, any rules that exist with lower priorities (higher numbers) that have the same attributes as rules with higher priorities aren’t processed.
+Azure default security rules are given the highest number with the lowest priority to ensure that custom rules are always processed first.
+
