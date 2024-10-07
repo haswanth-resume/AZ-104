@@ -1,6 +1,7 @@
 https://adityagarg94.medium.com/azure-104-renewal-questions-with-explanation-d29f8e40727c
 https://medium.com/@rajoliharikrishna72/azure-104-renewal-question-answer-with-explanation-af05e1cddf63
 https://medium.com/@mmkr.scm/az-104-renewal-exam-questions-bb66a568631b
+https://www.studocu.com/en-us/document/florida-technical-college-deland/computer-technology/az-104-renew/64508567
 
 # Renewal for Microsoft Certified: Azure Administrator Associate
 ## AZ-104 RENEWAL ASSESSMENT 38 QUESTIONS
@@ -12,15 +13,19 @@ You plan to deploy the following Azure web apps:
 - WebApp3, that uses the Java 17 runtime stack
 - WebApp4, that uses the PHP 8.0 runtime stack
 You need to create the app service plans for the web apps.
-
 What is the minimum number of app service plans that should be created?
-
 Select only one answer.
-1. 1
-1. 2 
-1. 3
-1. 4 `(chatGpt, bing)`
 
+1. 1
+2. 2 
+3. 3
+4. 4 
+
+Ans: 4
+Explaination:
+Each of these web apps uses a different runtime stack.
+Therefore, you will need to create a separate app service plan for each runtime stack.
+So, the minimum number of app service plans that should be created is four.
 
 #### Question 2 of 26
 You plan to deploy an Azure web app that will have the following settings:
@@ -34,9 +39,14 @@ Which setting should you modify?
 
 Select only one answer.
 1. Operating system
-1. Publish `(chatGpt, bard, bing)` `correct answer`
-1. Region
-1. Windows Plan
+2. Publish
+3. Region
+4. Windows Plan
+
+Ans: Publish 
+Explaination:
+To ensure that WebApp1 uses the ASP.NET V4.8 runtime stack, you should modify the Publish setting.
+Since ASP.NET V4.8 is a framework that runs on Windows, you need to publish the app as a Code rather than a Docker Container. Docker containers are typically used for Linux-based deployments or custom environments, whereas ASP.NET V4.8 is best supported directly on Windows without containerization.
 
 #### Question 3 of 26
 You plan to deploy an Azure web app that will have the following settings:
@@ -46,26 +56,31 @@ You plan to deploy an Azure web app that will have the following settings:
 - Operating system: Linux
 - Continuous deployment: Disable
 You need to ensure that you can integrate WebApp1 with GitHub Actions.
-
 Which setting should you modify?
 
 Select only one answer.
-1. Continuous deployment `(chatGpt, bard, bing)` `correct answer`
-1. Operating system
-1. Publish `I chose`
-1. Runtime stack
+1. Continuous deployment  
+2. Operating system
+3. Publish
+4. Runtime stack
+
+
+
+Ans: Continuous deployment 
 
 #### Question 4 of 26
 You have Azure web app named WebApp1.
 You need to integrate GitHub as a source code repository for WebApp1.
 What should you use?
 
-Select only one answer.
-1. Deployment Center `(chatGpt, bard)` `Correct answer`
-1. Deployment slots
-1. Extensions
-1. Service Connector
 
+Select only one answer.
+1. Deployment Center
+2. Deployment slots
+3. Extensions
+4. Service Connector
+
+Ans: Deployment Center 
 
 #### Question 5 of 26
 You plan to create an Azure container instance named container1 that will use a Docker image named Image1.
@@ -74,63 +89,63 @@ Which Azure resources should you deploy for the persistent storage?
 
 Select only one answer.
 1. an Azure container registry
-1. an Azure SQL database
-1. an Azure Storage account and a blob container
-1. an Azure Storage account and a file share `(chatGpt, bard, bing)` `correct answer`
+2. an Azure SQL database
+3. an Azure Storage account and a blob container
+4. an Azure Storage account and a file share
 
+Ans: an Azure Storage account and a file share
 
 #### Question 6 of 26
 You have an Azure container registry that stores an image named Image1 and a Windows Server 2022 Azure virtual machine named VM1.
 You need to ensure that you can run Image1 in VM1.
-
 What should you install in VM1?
 
 Select only one answer.
 1. Azure Portal
-1. Docker ` (chatGpt, bard, bing)` `Probably correct answer`
-1. Hyper-V role
-1. .NET Framework 4.7
+2. Docker 
+3. Hyper-V role
+4. .NET Framework 4.7
 
+Ans:  Docker 
 
 #### Question 7 of 26
 You have Azure subscription that includes virtual network named VNet1 in West US region.
-
 You plan to deploy following container instances:
 - Instance1, running Windows container image in West US region
 - Instance2, running Linux container image in West US region
 - Instance3, running Windows container image in East US region
-
 Which container instances can be deployed to VNet1?
 
 Select only one answer.
-1. Instance1 and Instance2 only `I chose (bard)` `correct answer`
-1. Instance1 and Instance3 only
-1. Instance1, Instance2 and Instance3 `(chatGpt)`
-1. Instance1 only
-1. Instance2 only 
+1. Instance1 and Instance2 only 
+2. Instance1 and Instance3 only
+3. Instance1, Instance2 and Instance3 
+4. Instance1 only
+5. Instance2 only 
 
-
+Ans: Instance1 and Instance2 only 
+Explaination:VNet1 is located in the West US region, only container instances that are also in the West US region can be deployed to it.
 
 #### Question 8 of 26
 You have an Azure Storage account named storage1.
-
 You create the following encryption scopes for storage1:
 - Scope1 that has an encryption type of Microsoft-managed keys
 - Scope2 that has an encryption type of Customer-managed keys
-
 Which storage services can be used with Scope2?
 
 Select only one answer.
-1. blob and file only `I chose (chatGpt, bard)` `correct answer`
-1. blob, file, table, and queue
-1. blob only
-1. file only
-1. table and queue only
+1. blob and file only
+2. blob, file, table, and queue
+3. blob only
+4. file only
+5. table and queue only
 
+Ans: blob and file only
+Explaination: Customer-managed keys (Scope2) are indeed used for scenarios where you want more control over the encryption keys. 
+Azure Blob Storage and Azure File Storage support customer-managed keys, allowing you to manage and rotate your own keys.
 
 #### Question 9 of 26
 You have an Azure Storage account named storage1 that is configured to use the Hot access tier.
-
 Storage1 has a container named container1 and the lifecycle management rule with following settings:
 - Move blob to cool storage: Selected
 - Days after last modification: 3
@@ -138,31 +153,39 @@ Storage1 has a container named container1 and the lifecycle management rule with
 - Days after last modification: 5
 On December 1, you create a file named File1 in container1.
 On December 10, you rehydrate File1 and move the file to the Hot access tier.
-
 When will File1 be moved to archive storage?
 
 Select only one answer.
-1. on December 15 `(chatGpt, bard, bing)` `correct answer`
-1. on December 18 `I chose`
-1. on January 1
-1. within 24 hours
+1. on December 15 
+2. on December 18 
+3. on January 1
+4. within 24 hours
 
+Ans: on December 15
 
 #### Question 10 of 26
 You have an Azure subscription that contains the following storage accounts:
 - storage1, configured as StorageV2 kind
 - storage2, configured as BlobStorage kind
 - storage3, configured as FileStorage kind
-
 Which storage account or storage accounts can you use Lifecycle management?
-
 Select only one answer.
-1. storage1 and storage2 only `I chose (chatGpt, bard)` `correct answer`
-1. storage1 and storage3 only
-1. storage1 only
-1. Storage1, storage2 and storage3
-1. storage2 and storage3 only
 
+1. storage1 and storage2 only 
+2. storage1 and storage3 only
+3. storage1 only
+4. Storage1, storage2 and storage3
+5. storage2 and storage3 only
+
+Ans: storage1 and storage2 only 
+Explaination:
+Lifecycle management policies in Azure Storage are supported for block blobs and append blobs in the following types of storage accounts12:
+General-purpose v2 (StorageV2)
+Blob Storage
+Therefore, you can use lifecycle management with:
+storage1 (configured as StorageV2 kind)
+storage2 (configured as BlobStorage kind)
+storage3 (configured as FileStorage kind) does not support lifecycle management policies.
 
 #### Question 11 of 26
 You have an Azure storage account that contains a blob container named container1.
@@ -171,11 +194,12 @@ Which authorization types can you use?
 
 Select only one answer.
 1. Microsoft Entra ID only
-1. Microsoft Entra ID, shared access signature or certificate only
-1. Microsoft Entra ID, storage key or shared access signature only
-1. Microsoft Entra ID, storage key, shared access signature or certificate `(chatGpt, bard)` `correct answer`
-1. Storage key or shared access signature only
+2. Microsoft Entra ID, shared access signature or certificate only
+3. Microsoft Entra ID, storage key or shared access signature only
+4. Microsoft Entra ID, storage key, shared access signature or certificate 
+5. Storage key or shared access signature only
 
+Ans:  Microsoft Entra ID, storage key, shared access signature or certificate 
 
 #### Question 12 of 26
 You have an Azure subscription that contains a storage account named storage1 and the following virtual machines:
@@ -192,10 +216,18 @@ Which virtual machines can access storage1.
 
 Select only one answer.
 1. VM1 and VM2 only 
-1. VM1 and VM3 only ` (chatGpt)` `Probably correct answer`
-1. VM1 only 
-1. VM1, VM2, and VM3
-1. VM3 only
+2. VM1 and VM3 only
+3. VM1 only 
+4. VM1, VM2, and VM3
+5. VM3 only
+
+Ans: VM1 and VM3 only 
+Explaination: 
+VM1 and VM3 have IP addresses within the allowed range (13.68.158.0/24).
+VM2 has an IP address outside the allowed range (52.255.145.76).
+Subnet1 has a Microsoft.Storage service endpoint, but Subnet2 does not.
+Since the firewall allows access only from the 13.68.158.0/24 IP address range and VM1 and VM3 fall within this range, they can access storage1. 
+VM2 cannot access storage1 because its IP address is outside the allowed range.
 
 
 #### Question 13 of 26
@@ -205,15 +237,15 @@ You have an Azure subscription that includes the following resources:
 - WebApp1, a web app application service
 - NSG1, a network security group
 You create an application security group named ASG1.
-
 Which resource can use ASG1?
-
 Select only one answer.
-1. NSG1 `I chose (chatGpt, bing)` `correct answer`
-1. Subnet1
-1. VNet1
-1. WebApp1 
 
+1. NSG1 
+2. Subnet1
+3. VNet1
+4. WebApp1 
+
+Ans: NSG1 or Subnet1 - not sure in any platform
 
 #### Question 14 of 26
 You have an Azure subscription that contains the following fully peered virtual networks:
@@ -227,9 +259,11 @@ What is the minimum number of Azure Bastion hosts that you must deploy?
 
 Select only one answer.
 1. 1
-1. 2 `(bing)` `correct answer`
-1. 3 `(bard)`
-1. 4 `(chatGpt)`
+2. 2 
+3. 3
+4. 4 
+
+Ans: 1
 
 #### Question 15 of 26
 You have an Azure virtual network named VNET1 that is connected to a network security group (NSG) named NSG1. NSG1 has the following inbound security rules:
@@ -244,10 +278,13 @@ What should you change for NSG1?
 
 Select only one answer.
 1. Priority for Rule3 to 450
-1. Priority for Rule4 to 250
-1. Priority for Rule5 to 250 `(chatGpt, bard)` `correct answer`
-1. Protocol for Rule2 to TCP
+2. Priority for Rule4 to 250
+3. Priority for Rule5 to 250 
+4. Protocol for Rule2 to TCP
 
+
+
+Ans: Priority for Rule5 to 250 
 
 #### Question 16 of 26
 You have a Recovery Services vault named Vault1 that has soft delete enabled.
@@ -260,24 +297,29 @@ Which backups are protected by soft delete?
 
 Select only one answer.
 1. share1 only
-1. VM1 and SQL1 only `(chatGpt, bing)` `correct answer`
-1. VM1 only
-1. VM1, share1, and SQL1 
+2. VM1 and SQL1 only
+3. VM1 only
+4. VM1, share1, and SQL1 
 
+Ans:  VM1 and SQL1 only
+Explaination:
+Soft delete in Azure Backup provides protection for backup data even after deletion, retaining the data for an additional 14 days to allow recovery. This feature is supported for the following services:
+Azure virtual machines
+SQL Server in Azure VMs
+SAP HANA in Azure VMs
 
 #### Question 17 of 26
 You have a Windows Server Azure virtual machine named VM1.
-
 You need to back up two folders in VM1 by using Azure Backup. The solution should minimize administrative effort.
-
 What should you deploy first?
 
 Select only one answer.
 1. Azure Backup Server
-1. Recovery Services agent `(bard, bing)` `correct answer`
-1. Microsoft Monitoring agent
-1. Windows Server Backup role
+2. Recovery Services agent 
+3. Microsoft Monitoring agent
+4. Windows Server Backup role
 
+Ans: Recovery Services agent
 
 #### Question 18 of 26
 You have an Azure virtual machine named Computer5 and a Recovery Services vault named Vault5. Computer5 contains the following data disks:
@@ -289,42 +331,45 @@ You have an Azure virtual machine named Computer5 and a Recovery Services vault 
 Which data disks can you back up to Vault5?
 
 Select only one answer.
-1. DiskA, DiskB, DiskC, and DiskD `correct answer`
-1. DiskA only 
-1. DiskB only
-1. DiskC only
-1. DiskD only
+1. DiskA, DiskB, DiskC, and DiskD
+2. DiskA only 
+3. DiskB only
+4. DiskC only
+5. DiskD only
 
+Ans: DiskA, DiskB, DiskC, and DiskD
+Explaination:
+Azure Backup supports backing up data disks up to 32 TB in size12. Given this limit, you can back up the following disks to Vault5:
 
 #### Question 19 of 26
 You recently create an Azure virtual machine standard backup policy.
-
 You need to configure a retention period for virtual machine instant recovery snapshots.
-
 What is the maximum number of days that can be set for the retention period?
 
 Select only one answer.
 1. 5 
-1. 7 
-1. 14
-1. 30 `correct answer`
+2. 7 
+3. 14
+4. 30
 
+Ans: 5
+Explaination:
+The maximum number of days that can be set for the retention period of virtual machine instant recovery snapshots in an Azure standard backup policy is 5 days1.
 
 #### Question 20 of 26
 You have an Azure subscription.
-
 You plan to run a data warehouse in an Azure virtual machine named VM1.
 You need to ensure that VM1 is optimized for running a data warehouse.
-
 Which VM type should you use for VM1?
 
 Select only one answer.
 1. Compute optimized (F-Series)
-1. General purpose (D-Series)
-1. High performance computing (H-Series)
-1. Memory optimized (M-Series) `correct answer`
-1. Storage optimized (Ls-Series)
+2. General purpose (D-Series)
+3. High performance computing (H-Series)
+4. Memory optimized (M-Series)
+5. Storage optimized (Ls-Series)
 
+Ans: Memory optimized (M-Series)
 
 #### Question 21 of 26
 You have an Azure subscription that contains the following resources:
@@ -335,53 +380,58 @@ You have an Azure subscription that contains the following resources:
 - A virtual network named VNet3 that is deployed to the West US region in RG2
 You need to deploy a virtual machine named VM1 to RG1 in the West US region.
 
+
+
 To which virtual network or virtual networks can you connect VM1?
 
 Select only one answer.
 1. VNet1 only 
-1. VNet1 or VNet2 only
-1. VNet1 or VNet3 only `correct answer`
-1. VNet1, VNet2 or VNet3
+2. VNet1 or VNet2 only
+3. VNet1 or VNet3 only 
+4. VNet1, VNet2 or VNet3
 
+Ans: VNet1 or VNet3 only
+Explaination:
+you can use the Vnet in the different resource group than the VM. 
+But the limitation is your Vnet and VM must be in the same region.
 
 #### Question 22 of 26
 You have an Azure virtual machine named VM1.
-
 VM1 contains the following:
 - a File named File1 that is stored on volume C:\
 - a File named File2 that is stored on volume D:\
 - an App named App1 that is in a running state
 - a user named User1 that is connected to VM1
 You plan to resize VM1.
-
 What is preserved after the resize?
-
 Select only one answer.
-1. File1 and File2 only `correct answer`
-1. File1 and the state of App1 only   
-1. File1, File2 and the state of App1 only
-1. File1, File2, the state of App1 and the connection of User1
-1. File1 only
 
+1. File1 and File2 only 
+2. File1 and the state of App1 only   
+3. File1, File2 and the state of App1 only
+4. File1, File2, the state of App1 and the connection of User1
+5. File1 only
+
+Ans: File1 and File2 only
+Explaination:
+When you resize an Azure virtual machine, the data on the virtual machine’s disks is preserved. However, the state of the virtual machine, including any running applications and connected users, is not preserved because the VM will be restarted during the resize process
 
 #### Question 23 of 26
 You have an Azure subscription and an availability set named AS1 that has 5 update domains.
-
 You deploy 27 virtual machines to AS1.
-
 After a planned update, what is the minimum number of virtual machines that are available?
-
 Select only one answer.
-1. 14
-1. 20
-1. 21 `correct answer`
-1. 22 
-1. 26 
 
+1. 14
+2. 20
+3. 21
+4. 22 
+5. 26 
+
+Ans: 21 - not sure
 
 #### Question 24 of 26
 You have a Microsoft Entra tenant named contoso.com that contains a user named Ben Smith.
-
 You configure a Password protection for contoso.com that includes the following Custom banned passwords settings:
 - Enforce custom list: Yes
 - Custom banned password list: Contoso
@@ -389,14 +439,14 @@ You configure a Password protection for contoso.com that includes the following 
 
 Select only one answer.
 1. C0nt0s0123 
-1. CONTOSO123
-1. Conto123so 
-1. FgRs01 `correct answer`
+2. CONTOSO123
+3. Conto123so 
+4. FgRs01 
 
+Ans: FgRs01 
 
 #### Question 25 of 26
 You have a Microsoft Entra tenant.
-
 You create a user named Admin1.
 You need to ensure that Admin1 can perform following tasks:
 - Assign licenses to Microsoft Entra groups
@@ -406,55 +456,53 @@ What Microsoft Entra role should you add to Admin1?
 
 Select only one answer.
 1. Billing Administrator
-1. Helpdesk Administrator
-1. License Administrator 
-1. User Administrator `(bing)` `correct answer`
+2. Helpdesk Administrator
+3. License Administrator 
+4. User Administrator 
 
+Ans: User Administrator 
 
 #### Question 26 of 26
 You have an Azure subscription that contains a user named User1, a resource group named RG1, and a virtual machine named VM1.
-
 You enable a system-assigned managed identity for VM1.
-
 To which identities can you assign the Reports Reader role?
 
 Select only one answer.
 1. User1 and RG1 only
-1. User1 and VM1 only `correct answer`
-1. User1 only
-1. User1, RG1, and VM1 
+2. User1 and VM1 only 
+3. User1 only
+4. User1, RG1, and VM1 
 
+Ans: User1 and VM1 only 
 
 #### Question 1 of 26
 You have an Azure web app named Contoso2023.
-
 You add a deployment slot to Contoso2023 named Slot1.
 You need to be able to perform a deployment slot swap with preview.
-
 What should you modify?
 
 Select only one answer.
 1. application settings for Contoso2023
-1. application settings for Contoso2023-Slot1 `correct answer`
-1. general settings for Contoso2023
-1. general settings for Contoso2023-Slot1
+2. application settings for Contoso2023-Slot1 
+3. general settings for Contoso2023
+4. general settings for Contoso2023-Slot1
 
+Ans: application settings for Contoso2023-Slot1
 
 #### Question 3 of 26
 You have an Azure subscription that includes a virtual network named VNet1.
-
 You plan to create a web app named WebApp1 and deploy it to VNet1.
 You need to prepare the environment for the planned web app. The solution must minimize costs.
-
 Which app service plan size should you use?
 
 Select only one answer.
 1. Dev / Test B1 
-1. Dev / Test F1 `correct answer`
-1. Isolated I1V2
-1. Production P1V2
-1. Production P3V3
+2. Dev / Test F1
+3. Isolated I1V2
+4. Production P1V2
+5. Production P3V3
 
+Ans: Dev / Test F1
 
 #### Question 4 of 26
 You have an Azure subscription that includes the following web apps:
@@ -462,30 +510,31 @@ You have an Azure subscription that includes the following web apps:
 - WebApp2, which runs code in a Linux operating system.
 - WebApp3, which runs in a Docker container on Windows.
 - WebApp4, which runs in a Docker container on Linux.
-
 From which web apps can you use WebJobs?
 
 Select only one answer.
 1. WebApp1 and WebApp2 only
-1. WebApp1 and Web3 only `correct answer`
-1. WebApp1 only
-1. WebApp1, WebApp2, WebApp3 and WebApp4
+2. WebApp1 and Web3 only
+3. WebApp1 only
+4. WebApp1, WebApp2, WebApp3 and WebApp4
 
+Ans: WebApp1 and Web3 only
+Azure WebJobs can be used with web apps running on both Windows and Linux operating systems, as well as with Docker containers on both platforms. 
+However, WebJobs for Linux and Docker containers are currently in preview.
 
 #### Question 5 of 26
 You have an Azure container registry named Registry1.
-
 You create a container image named image1 on a Windows Server container host named Host1.
 You need to store image1 in Registry1.
-
 Which URL should you use to push image1 from Host1?
 
 Select only one answer.
 1. azure.microsoft.com/Registry1
-1. Registry1.azurecr.io  `correct answer`
-1. Registry1.file.core.windows.net
-1. Registry1.onmicrosoft.com
+2. Registry1.azurecr.io 
+3. Registry1.file.core.windows.net
+4. Registry1.onmicrosoft.com
 
+Ans: Registry1.azurecr.io 
 
 #### Question 12 of 26
 You have an Azure subscription that contains a virtual network named VNET1. VNET1 uses the following address spaces:
@@ -498,29 +547,31 @@ VNET1 contains the following subnets:
 To Subnet1, you deploy a virtual machine named VM1 that runs Windows Server 2022. VM1 has Remote Desktop enabled.
 VM1 does NOT have a public IP address.
 You need to be able to deploy Azure Bastion to protect VM1.
-
 What should you do first?
 
 Select only one answer.
-1. Add a new subnet to VNET1. `correct answer`
-1. Add a public IP address to VM1.
-1. Add an extension to VM1.
-1. Modify the address space of VNET1.
+1. Add a new subnet to VNET1.
+2. Add a public IP address to VM1.
+3. Add an extension to VM1.
+4. Modify the address space of VNET1.
 
+Ans: Modify the address space of VNET1.
+Explaination:
+To deploy Azure Bastion, you need to create a dedicated subnet named AzureBastionSubnet within your virtual network. This subnet must have a prefix of at least /27.
+Given your current address spaces, you don’t have enough available address space to create this subnet. Therefore, the first step is to modify the address space of VNET1 to ensure you have enough space to add the required subnet.
 
 #### Question 14 of 26
 You have an Azure subscription that contains a virtual machine named VM1 and a storage account named storage1.
-
 You need to ensure that VM1 can access storage1 by using the Azure backbone.
-
 What should you configure?
 
 Select only one answer.
 1. a routing table
-1. a service endpoint `correct answer`
-1. a VPN gateway
-1. Peering
+2. a service endpoint 
+3. a VPN gateway
+4. Peering
 
+Ans: a service endpoint
 
 #### Question 15 of 26
 You have an Azure subscription that includes following resources:
@@ -530,15 +581,16 @@ You have an Azure subscription that includes following resources:
 - NIC1, a network interface of VM1
 - LB1, a load balancer
 You create a network security group named NSG1.
-
 To which two Azure resources can you associate NSG1?
 
 Select all answers that apply.
 1. LB1
-1. NIC1 `(bing)` `correct answer`
-1. Subnet1 `(bing)` `correct answer`
-1. VM1
-1. VNet1
+2. NIC1 
+3. Subnet1
+4. VM1
+5. VNet1
+Ans: NIC1, Subnet1
+
 
 
 #### Question 16 of 26
@@ -547,67 +599,62 @@ You have an Azure subscription that contains the following virtual machines:
 - VM2, a virtual machine that runs Red Hat Enterprise Linux
 - VM3, a virtual machine that is configure with Azure Disk encryption and runs Windows Server 2022
 You use Azure Backup to back up the three virtual machines.
-
 Which virtual machine or virtual machines can use file-level restore?
-
 Select only one answer.
-1. VM1 and VM2 only `(bing)`  `correct answer`
-1. VM1 and VM3 only
-1. VM1 only
-1. VM1, VM2 and VM3
+1. VM1 and VM2 only
+2. VM1 and VM3 only
+3. VM1 only
+4. VM1, VM2 and VM3
 
+Ans:  VM1 and VM2 only
 
 #### Question 19 of 26
 You have an Azure subscription that includes a virtual machine named VM1.
-
 You need to protect VM1 by using Azure Backup.
-
 Which Azure resource should you create first?
 
 Select only one answer.
 1. a backup policy
-1. a backup vault
-1. a recovery services vault `(bing)`  `correct answer`
-1. a storage account
+2. a backup vault
+3. a recovery services vault
+4. a storage account
 
+
+Ans: a recovery services vault
 
 #### Question 20 of 26
 You have an Azure subscription.
-
 You plan to use fault domains.
-
 From which Azure resource can you configure the fault domains?
 
 Select only one answer.
-1. Availability set `(bing)`  `correct answer`
-1. Virtual machine
-1. Virtual machine scale set `(bing)`  `correct answer`
-1. Virtual network
+1. Availability set 
+2. Virtual machine
+3. Virtual machine scale set 
+4. Virtual network
 
-
+Ans: Availability set 
 #### Question 23 of 26
 You have an Azure subscription named Sub1.
-
 You plan to deploy a virtual machine scale set named VMSS1 in East US region. VMSS1 will have 8 instances.
-
 What is the maximum number of availability zones that VMSS1 can use?
 
 Select only one answer.
 1. 1
-1. 2
-1. 3 `(bing)`  `correct answer`
-1. 4
+2. 2
+3. 3
+4. 4
 
-
+Ans: 3
 #### Question 25 of 26
 Your company has multiple departments and one Azure subscription. The user accounts for all employees are in the same Microsoft Entra tenant.
-
 You need to delegate permissions for the users in a single department only.
-
 What should you use to organize the user accounts?
 
 Select only one answer.
-1. administrative unit `correct answer`
-1. security group
-1. resource group
-1. workspace
+1. administrative unit
+2. security group
+3. resource group
+4. workspace
+
+Ans: administrative unit
