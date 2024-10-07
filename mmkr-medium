@@ -127,7 +127,7 @@ B) Subnet1
 C) VNet1
 D) WebApp1
 
-Correct Answer: A) NSG1
+Correct Answer: A) NSG1 or Subnet1 - not sure in any platform
 
 12. You have an Azure subscription that includes following resources:
 VNet1, a virtual network Subnet1, a subnet in VNet1 VM1, a virtual machine NIC1, a network interface of VM1 LB1, a load balancer 
@@ -225,7 +225,7 @@ c. Isolated I1V2
 d. Production P1V2
 e. Production P3V3
 
-Correct Answer: a. Dev / Test B1
+Correct Answer: b. Dev / Test F1 
 
 21. You have an Azure web service named Contoso2022 that runs in the Standard App Service plan. Contoso2022 has five deployment slots in use. 
 A user named User1 has the Contributor role for Contoso2022. 
@@ -277,8 +277,10 @@ d. Use a condition when assigning User1 an RBAC role on storage1
 Correct Answer: b. Provide User1 with a shared access signature (SAS)
 
 25. You have an Azure subscription that contains the following storage accounts:
-storage1, configured as StorageV2 kind storage2, configured as BlobStorage kind storage3, 
-configured as FileStorage kind Which storage account or storage accounts can you use Lifecycle management?
+- storage1, configured as StorageV2 kind
+- storage2, configured as BlobStorage kind
+- storage3, configured as FileStorage kind
+Which storage account or storage accounts can you use Lifecycle management?
 Select only one answer.
 
 a. storage1 and storage2 only
@@ -290,13 +292,16 @@ e. storage2 and storage3 only
 Correct Answer: a. storage1 and storage2 only
 
 26. You have an Azure subscription that contains a storage account named storage1 and the following virtual machines:
-VM1 has a public IP address of 13.68.158.24 and is connected to VNET1/Subnet1 VM2 has a public IP address of 52.255.145.76 and
-is connected to VNET1/Subnet1 VM3 has a public IP address of 13.68.158.50 and is connected to VNET1/Subnet2 The subnets have the following service endpoints:
-Subnet1 has a Microsoft.Storage service endpoint
-Subnet2 does NOT have any service endpoint
-Storage1 has a firewall configured to allow access from the 13.68.158.0/24 IP address range only.
+- VM1 has a public IP address of 13.68.158.24 and is connected to VNET1/Subnet1
+- VM2 has a public IP address of 52.255.145.76 and is connected to VNET1/Subnet1
+- VM3 has a public IP address of 13.68.158.50 and is connected to VNET1/Subnet2
+
+The subnets have the following service endpoints:
+- Subnet1 has a Microsoft.Storage service endpoint
+- Subnet2 does NOT have any service endpoint
+- Storage1 has a firewall configured to allow access from the 13.68.158.0/24 IP address range only.
+
 Which virtual machines can access storage1.
-Select only one answer.
 
 a. VM1 and VM2 only
 b. VM1 and VM3 only
