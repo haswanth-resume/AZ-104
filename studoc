@@ -1,0 +1,198 @@
+1. You have Azure subscription that includes virtual network with following subnets: 
+• Subnet1, which has connected virtual machine 
+• Subnet2, which has connected web app 
+• Subnet3, which has connected container instance You plan to deploy container instance named container1.
+To which subnets can you connect container1?
+Select only one answer. 
+
+Subnet3 only 
+Subnet1 and Subnet3 only 
+Subnet2 and Subnet3 only
+Subnet1, Subnet2 and Subnet3 
+
+Ans: Subnet 3 only
+Explaination: 
+To deploy a new container instance named container1, you need to ensure that the subnet you choose is properly configured for Azure Container Instances. 
+Specifically, the subnet must be dedicated to container instances and cannot contain other resource types.
+
+2. You have an Azure Storage account named storage1 that contains a file share named share1. 
+You also have an on-premises Active Directory domain that contains a user named User1. 
+You need to ensure that User1 can access share1 by using the SMB protocol.
+What should you do? Select only one answer. 
+
+•  Provide User1 with the shared access signature (SAS) for storage1.
+•  Configure the Access control (IAM) settings of storage1. 
+•  Configure the Firewalls and virtual networks settings of storage1. 
+•  Provide User1 with the access key for storage1. 
+
+Ans:  Configure the Access control (IAM) settings of storage1.
+Explaination: 
+To ensure that User1 can access the Azure file share named share1 using the SMB protocol, you need to integrate your Azure Storage account with your on-premises Active Directory (AD). 
+This involves registering your storage account with your on-premises AD and setting the required domain properties on the storage account1.
+This will allow you to assign the necessary permissions to User1, enabling access via SMB with their AD credentials.
+
+3. You have an Azure storage account named storage1. Three users use the following methods to access the data in storage1:
+• User1 uses the Azure portal 
+• User2 uses the Azure Storage Explorer 
+• User3 uses File Explorer in Windows 11 You generate a storage access signature named SAS1 for storage1. 
+Which user or users can access storage1 by using SAS1? Select only one answer. 
+
+• User1 only 
+• User2 only 
+• User1 and User2 only 
+• User2 and User3 only 
+• User1, User2 and User3
+
+Answer: • User1, User2 and User3
+
+4. Your Azure AD contains three users named User1, User2, and User3.
+You have an Azure storage account named storage1 that has the following access: 
+• User1 is assigned the Storage Account Contributor role on storage1 
+• User2 has a access key for storage1 
+• User3 has a shared access signature for storage1 
+You rotate the keys for storage1. Which user or users can access storage1? 
+Select only one answer. 
+
+• User1 only 
+• User1 and User2 only 
+• User2 and User3 only 
+• User1, User2 and User3 
+
+Ans: User1 only 
+Explaination: 
+When you rotate the keys for an Azure storage account, any existing access keys and shared access signatures (SAS) generated with the old keys will no longer be valid. 
+This means:
+User1, who is assigned the Storage Account Contributor role, will still have access because their access is based on role-based access control (RBAC) and not dependent on the storage account keys.
+User2, who has an access key, will lose access because the key they have will be invalid after rotation.
+User3, who has a SAS, will also lose access because the SAS token will be invalid after the key rotation.
+
+5. You have an Azure Storage account named storage1. You need to provide time-limited access to storage1. 
+What should you use? 
+Select only one answer. 
+
+• an access key 
+• a role assignment 
+• an access policy 
+• a shared access signature (SAS) 
+
+Answer:  a shared access signature (SAS) 
+Explaination:
+To provide time-limited access to your Azure Storage account named storage1, you should use a shared access signature (SAS). 
+A SAS token allows you to grant limited access to your storage resources without sharing your account key, and you can specify the start and expiry time for the access.
+
+You purchase a DNS domain named contoso.com. 
+You create an Azure public DNS zone named contoso.com that contains a host record for Server1.
+You need to ensure that internet users can resolve the name server1.contoso.com. 
+Which type of DNS record should you add to the domain registrar? Select only one answer. 
+• A 
+• NS 
+• SOA 
+• TXT
+
+Answer:  NS 
+Explaination: 
+To ensure that internet users can resolve the name server1.contoso.com, you should add an NS (Name Server) record to the domain registrar.
+This record will point to the Azure DNS name servers that are authoritative for the contoso.com zone.
+
+You have an Azure private DNS zone named contoso.com that contains the following records: 
+• @ of type SOA, which is NOT auto-registered 
+• @ of type A, which is NOT auto-registered 
+• Server1 of type A, which is auto-registered 
+• Server2 of type TXT, which is NOT auto-registered 
+Which three records can be deleted from contoso.com? 
+Select all answers that apply. 
+@ of type SOA 
+@ of type A 
+Server1 of type A 
+Server2 of type TXT
+
+Answer:   
+@ of type SOA 
+@ of type A 
+Server2 of type TXT 
+
+Explaination: 
+In your Azure private DNS zone named contoso.com, you can delete the following three records:
+@ of type SOA (which is NOT auto-registered)
+@ of type A (which is NOT auto-registered)
+Server2 of type TXT (which is NOT auto-registered)
+The Server1 of type A record should not be deleted as it is auto-registered and likely in use.
+
+A company named Contoso, Ltd. has an Azure subscription that is linked to an Azure AD tenant named contoso.com. 
+The Azure subscription contains the following virtual networks: 
+• VNET1- deployed in the East US location 
+• VNET2- deployed in the East US location 
+• VNET3- deployed in the West US location 
+Contoso purchases a company named A. Datum Corporation. 
+A. Datum has an Azure subscription that contains an Azure AD tenant named adatum.com. Adatum.com contains the following virtual networks:
+• VNETA- deployed in the East US location 
+• VNETB- deployed in the West US location Which virtual networks can you peer to VNET1?
+
+• VNET2 only 
+• VNET2 and VNET3 only 
+• VNET2 and VNETA only 
+• VNET2, VNET3, and VNETA only 
+• VNET2, VNET3, VNETA, and VNETB 
+
+Answer: • VNET2 and VNETA only
+Explaination: 
+These virtual networks are in the same region (East US) as VNET1, making them eligible for peering. 
+VNET3 and VNETB, being in the West US location, cannot be peered with VNET1 due to the regional difference.
+
+
+You have an Azure virtual network named VNET1 that has an IP address space of 192.168.0.0/16 and the following subnets: 
+• Subnet1- has an IP address range of 192.168.1.0/24 and is connected to 15 VMs 
+• Subnet2- has an IP address range of 192.168.2.0/24 and does NOT have any VMs connected
+You need to ensure that you can deploy Azure Firewall to VNET1. What should you do?
+Select only one answer.
+
+• Add a new subnet to VNET1.
+• Add a service endpoint to Subnet2.
+• Modify the subnet mask of Subnet2. 
+• Modify the IP address space of VNET1.
+
+Answer: Add a new subnet to VNET1.
+Explaination: 
+To deploy Azure Firewall to VNET1, you need to add a new subnet to VNET1. 
+This subnet must be named AzureFirewallSubnet and should have a minimum subnet size of /26.
+
+You have an Azure virtual machine named VM1. 
+You plan to backup VM1 by using Azure Backup. 
+What is the highest frequency that you can use to back up VM1? 
+Select only one answer.
+
+• Every hour 
+• Every 6 hours 
+• Every 8 hours 
+• Every day
+
+Answer: Every day
+
+You have an Azure AD tenant that contains a user named User1. 
+The tenant also contains several user accounts from the Marketing department and the Human Resources department. 
+You need to ensure that User1 can manage the users from the Marketing department only. 
+What should you use?
+Select only one answer. 
+• Management groups 
+• Administrative units 
+• Custom Azure AD roles 
+• Security groups that use dynamic user membership
+
+Answer: Administrative units 
+
+
+You have an Azure AD tenant that contains the following users: 
+• User1 has a Department set to Sales and a Country set to USA 
+• User2 has a Department set to Marketing and a Country set to USA 
+• User3 has a Department set to Sales and a Country set to DE 
+• User4 has a Department set to Marketing and a Country set to DE 
+You create a group named Group1 that has the following dynamic membership rule. 
+user.country -eq "USA" -and user.department -eq "Marketing" -or user.department -eq "Sales" Which users are members of Group1? 
+Select only one answer. 
+User1 and User2 only 
+User1 and User3 only 
+User2 and User3 only 
+User1, User2, and User3 only 
+User1, User2, User3 and User4 
+
+Answer: User1, User2, and User3 only
