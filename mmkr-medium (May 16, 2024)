@@ -85,7 +85,9 @@ d. User Administrator
 
 Correct Answer: d. User Administrator
 
-8. You have an Azure subscription that contains a user named User1, a resource group named RG1, and a virtual machine named VM1. You enable a system-assigned managed identity for VM1. To which identities can you assign the Reports Reader role?
+8. You have an Azure subscription that contains a user named User1, a resource group named RG1, and a virtual machine named VM1. 
+You enable a system-assigned managed identity for VM1. 
+To which identities can you assign the Reports Reader role?
 Select only one answer.
 
 a. User1 and RG1 only
@@ -118,8 +120,11 @@ e. DiskD only
 Correct Answer: a. DiskA, DiskB, DiskC, and DiskD
 
 11. You have an Azure Subscription that includes the following resources: 
-· VNet1, a virtual network · Subnet1, a subnet in VNet1 · WebApp1, a web app application service
-· NSG1, a network security group You create an application security group named ASG1.
+· VNet1, a virtual network 
+· Subnet1, a subnet in VNet1 
+· WebApp1, a web app application service
+· NSG1, a network security group
+You create an application security group named ASG1.
 
 Which resource can use ASG1?
 A) NSG1
@@ -185,7 +190,8 @@ d. an Azure Storage account and a file share
 
 Correct Answer: d. an Azure Storage account and a file share
 
-17. You have azure web app named webapp1. you need to integrate github as a source code repository for webapp1. what should you use?
+17. You have azure web app named webapp1. 
+you need to integrate github as a source code repository for webapp1. what should you use?
 select only one answer.
 
 a. deployment center
@@ -196,8 +202,11 @@ d. service connector
 Correct Answer: a. deployment center
 
 18. You plan to deploy an Azure web app that will have the following settings:
-Name: WebApp1 Publish: Code Runtime stack: Java 11 Operating system
-Linux Continuous deployment: Disable You need to ensure that you can integrate WebApp1 with GitHub Actions. Which setting should you modify?
+Name: WebApp1 
+Publish: Code Runtime 
+stack: Java 11 Operating system
+Linux Continuous deployment: Disable
+You need to ensure that you can integrate WebApp1 with GitHub Actions. Which setting should you modify?
 Select only one answer.
 
 a. Continuous deployment
@@ -207,7 +216,8 @@ d. Runtime stack
 
 Correct Answer: a. Continuous deployment
 
-19. You have an Azure subscription. You plan to use fault domains. From which Azure resource can you configure the fault domains? 
+19. You have an Azure subscription. You plan to use fault domains. 
+From which Azure resource can you configure the fault domains? 
 Select only one answer.
 
 a. Availability set
@@ -227,7 +237,8 @@ e. Production P3V3
 
 Correct Answer: b. Dev / Test F1 
 
-21. You have an Azure web service named Contoso2022 that runs in the Standard App Service plan. Contoso2022 has five deployment slots in use. 
+21. You have an Azure web service named Contoso2022 that runs in the Standard App Service plan. 
+Contoso2022 has five deployment slots in use. 
 A user named User1 has the Contributor role for Contoso2022. 
 You need to ensure that User1 can create additional deployment slots to Contoso2022.
 What should you do? Select only one answer.
