@@ -1013,470 +1013,583 @@ What should you do? Select only one answer.
 Ans:  Configure the Access control (IAM) settings of storage1.
 
 Question 12 of 28
-You have an Azure virtual machine named VMI that automatically registers in an Azure private DNS zone named contoso.com.
+You have an Azure virtual machine named VM1 that automatically registers in an Azure private DNS zone named contoso.com.
 VMI hosts a website named Sitel.
 You need to ensure that Sitel can be resolved by using a URL of http:t/www.contoso.com. The solution must ensure that if the IP
-address of VMI changes, mvw.contoso.com will resolve to the changed IP address.
+address of VM1 changes, mvw.contoso.com will resolve to the changed IP address.
 Which DNS record type should you add to contoso.com?
-O SVR
-O TXT
-O AAAA
+
+SVR
+TXT
+AAAA
 CNAME
-Next >
+
+Ans: CNAME
+Explaination: 
+To ensure that the website Sitel hosted on VM1 can be resolved using the URL http://www.contoso.com and that it automatically updates if the IP address of VM1 changes, 
+you should add a CNAME (Canonical Name) record to the contoso.com DNS zone.
+A CNAME record maps an alias name (like www.contoso.com) to a true or canonical domain name (such as the DNS name of VM1). 
+This way, if the IP address of VM1 changes, the alias will still resolve correctly to the updated IP address.
+
+
 
 Question 13 of 28
-A company named Contoso, Ltd. has an Azure subscription that contains an Azure Active Directory (Azure AD) tenant named
-contoso.com. The Azure subscription contains the following virtual networks:
-• VNETI- deployed in the East US location
-• VNET2• deployed in the East US location
-• VNET3- deployed in the West US location
-Contoso purchases a company named A. Datum Corporation. A. Datum has an Azure subscription that contains an Azure AD
-tenant named adatum.com. Adatum.com contains the following virtual networks:
-• VNETA- deployed in the East US location
-• VNETB• deployed in the West US location
-Which virtual networks can you peer to VNETI ?
-O VNET2 only
-O VNET2 and VNET3 only
-O VNET2 and VNETA only
-O VNET2, VNET3, and VNETA only
-@ VNET2, VNET3, VNETA, and VNETB
-Next >
+A company named Contoso, Ltd. has an Azure subscription that is linked to an Azure AD tenant named contoso.com. 
+The Azure subscription contains the following virtual networks: 
+• VNET1- deployed in the East US location 
+• VNET2- deployed in the East US location 
+• VNET3- deployed in the West US location 
+Contoso purchases a company named A. Datum Corporation. 
+A. Datum has an Azure subscription that contains an Azure AD tenant named adatum.com. Adatum.com contains the following virtual networks:
+• VNETA- deployed in the East US location 
+• VNETB- deployed in the West US location Which virtual networks can you peer to VNET1?
+
+• VNET2 only 
+• VNET2 and VNET3 only 
+• VNET2 and VNETA only 
+• VNET2, VNET3, and VNETA only 
+• VNET2, VNET3, VNETA, and VNETB 
+
+Answer: • VNET2 and VNETA only
+
 Question 14 Of 28
-You have an Azure virtual machine named VMI that connects to a virtual network named VNETI.
+You have an Azure virtual machine named VMI that connects to a virtual network named VNETI .
 You create a private DNS zone named contoso.com and add an A record named hostl to the zone.
 You need to ensure that VMI can resolve hostl.contoso.com.
 What should you do?
-C) Modify the Access control (IAM) settings Of the zone.
-@ From the zone, add a virtual network link.
+
+Modify the Access control (IAM) settings Of the zone.
+From the zone, add a virtual network link.
 From the properties of the network interface, modify the options of the DNS servers.
 From the properties of VNETI, modify the options of the DNS servers.
-Next >
+
+Ans: From the zone, add a virtual network link.
 
 Question 15 of 28
-You have an Azure virtual network named VNETI that has an IP address space of 192.168.0.0/16 and the following subnets:
-• Subnetl. has an IP address range of 192.168.10/24 and is connected to 15 VMS
-• Subnet2- has an IP address range of 192.168.20/24 and does not have any VMS connected
-You need to ensure that you can deploy Azure Firewall to VNETI.
-What should you do?
-@ Add a new subnet to VNETI.
-C) Add a service endpoint to Subnet2.
-C) Modify the subnet mask of Subnet2.
-C) Modify the IP address space of VNETI.
-Next >
+You have an Azure virtual network named VNET1 that has an IP address space of 192.168.0.0/16 and the following subnets: 
+• Subnet1- has an IP address range of 192.168.1.0/24 and is connected to 15 VMs 
+• Subnet2- has an IP address range of 192.168.2.0/24 and does NOT have any VMs connected
+You need to ensure that you can deploy Azure Firewall to VNET1. What should you do?
+Select only one answer.
+
+• Add a new subnet to VNET1.
+• Add a service endpoint to Subnet2.
+• Modify the subnet mask of Subnet2. 
+• Modify the IP address space of VNET1.
+
+Answer: Add a new subnet to VNET1.
+
 Question 16 Of 28
-You have a proximity placement group narned Proxirnityl.
+You have a proximity placement group named Proximityl.
 You plan to create the following Azure resources:
-a virtual machine named Vtv•ll
-disk named Diskl
-virtual network named VNETI
-a
-public IP address named IPI
-a
-YVhich
-resources can you place in Proximity 1 ?
-@ VMI only
-C) Vtvll and Diskl only
-Diskl and IPI only
-C) VNETI, Diskl, and IPl only
-N ext
+
+a virtual machine named vm1
+a disk named Diskl
+a virtual network named VNET1
+a public IP address named IP1
+Which resources can you place in Proximity1 ?
+
+VM1 only
+VM1 and Disk1 only
+Disk1 and IP1 only
+VNET1, Disk1, and IP1 only
+
+Ans: VM1 Only
+Explaination: 
+Proximity placement groups are designed to ensure that Azure compute resources, such as virtual machines, are physically located close to each other to minimize latency
 
 Question 17 of 28
-You have an Azure virtual network named VNETI has and a network security group (NSG) named NSGI. NSGI has the following
-inbound security rules:
-• Rulel has a priority of 100 end allows port 3389 on TCP protocol from any source and to any destination
-• Rule2 has a priority of 200 and allows ports 80 and 8080 on UDP protocol from any source and to any destination
-• Rule3 has a priority of 300 and denies ports 1•2000 on TCP protocol from any source and to any destination
-• Rule4 has a priority of 400 and allows ports 50-500 on TCP protocol from VirtualNetvvork source and to any destination
-• Rules has a priority of 500 and allows ports 80 and 443 on TCP protocol from any source and to any destination
-You need to allow http and https connections from the internet to VNETI,
-What should you change for NSGI ?
-O Priority for Rule4 to 250
-O Protocol for Rule2 to TCP
-C) Priority for Rule3 to 450
-priority for Rule5 to 250
-Next >
+You have an Azure virtual network named VNET1 that is connected to a network security group (NSG) named NSG1. NSG1 has the following inbound security rules:
+- Rule1 has a priority of 100 and allows port 3389 on TCP protocol from any source and to any destination
+- Rule2 has a priority of 200 and allows ports 80 and 8080 on UDP protocol from any source and to any destination
+- Rule3 has a priority of 300 and denies ports 1-2000 on TCP protocol from any source and to any destination
+- Rule4 has a priority of 400 and allows ports 50-500 on TCP protocol from VirtualNetwork source and to any destination
+- Rule5 has a priority of 500 and allows ports 80 and 443 on TCP protocol from any source and to any destination
+You need to allow http and https connections from the internet to VNET1.
+
+What should you change for NSG1?
+
+Select only one answer.
+1. Priority for Rule3 to 450
+2. Priority for Rule4 to 250
+3. Priority for Rule5 to 250 
+4. Protocol for Rule2 to TCP
+
+Ans: Priority for Rule5 to 250 
+
 Question 18 of 28
 You have an Azure virtual machine named VMI that connects to a virtual network named VNETI.
 A network security group (NSG) named NSGI allows connections to VMI from VNETI only.
 You need to add an inbound security rule to NSGI that meets the following requirements:
 • Allows Azure Backup to back up VMI
-Minimizes the types of allowed inbound traffic
+• Minimizes the types of allowed inbound traffic
 What should you use as the source for the inbound security rule?
-(D any IP address
+
+any IP address
 the IP address of VMI
-• I a service tag for Azure Backup
-(D an application security group
-Next >
+a service tag for Azure Backup
+an application security group
+
+Ans: a service tag for Azure Backup
 
 Question 19 of 28
-You have an Azure subscription that contains a virtual network named VNETI, VNETI uses the following address spaces:
-• 10.10.1.0/24
-• 10.10.2.0/28
-VNETI contains the following subnets:
-• Subnetl• has an address space of 1010.10/24
-Subnet2• has an address space Of
-To Subnet', you deploy a virtual machine named VMI that runs Windows Server 2019. VMI has Remote Desktop enabled.
-VMI does NOT have a public IP address.
-You need to be able to deploy Azure Bastion, and then protect VMI.
+You have an Azure subscription that contains a virtual network named VNET1. VNET1 uses the following address spaces:
+- 10.10.1.0/24
+- 10.10.2.0/28
+
+VNET1 contains the following subnets:
+- Subnet1- has an address space of 10.10.1.0/24
+- Subnet2- has an address space of 10.10.2.0/28
+To Subnet1, you deploy a virtual machine named VM1 that runs Windows Server 2022. VM1 has Remote Desktop enabled.
+VM1 does NOT have a public IP address.
+You need to be able to deploy Azure Bastion to protect VM1.
 What should you do first?
-@ Add a new subnet to VNETI,
-C) Modify the address space of VNETI.
-C) Add a public IP address to VMI.
-C) Add an extension to VMI.
-Next >
+
+Select only one answer.
+1. Add a new subnet to VNET1.
+2. Add a public IP address to VM1.
+3. Add an extension to VM1.
+4. Modify the address space of VNET1.
+
+Ans: Modify the address space of VNET1.
+
 Question 20 of 28
-You have an Azure virtual machine named Computer5 and a Recovery Services vault named Vault5. Computer5 contains the
-following data disks:
-• DiskA has a size of 512 68
-• has a Size Of 30
-DiskC has a size of 26 TB
-DiskD has a size of 2.0 TB
+You have an Azure virtual machine named Computer5 and a Recovery Services vault named Vault5. Computer5 contains the following data disks:
+- DiskA has a size of 512 GB
+- DiskB has a size of 30 TB
+- DiskC has a size of 26 TB
+- DiskD has a size of 2.0 TB
+
 Which data disks can you back up to Vault5?
-C) DiskA only
-C) DiskB only
-C) Diskc only
-C) DiskD only
-DiskA, DiskB, DiskC, and DiskD
-Next >
+
+Select only one answer.
+1. DiskA, DiskB, DiskC, and DiskD
+2. DiskA only 
+3. DiskB only
+4. DiskC only
+5. DiskD only
+
+Ans: DiskA, DiskB, DiskC, and DiskD
 
 Question 21 of 28
-You have the following Azure resources:
-a virtual machine named VMI
-a Recovery Services vault named Vaultl
-On January 1, pu configure backups for VMI by using the following backup policy.
-Frequency: Daily
-Time: 23:00
-Timezone: (UTC) Coordinated Universal Time
-Retain instant recovery snapshot(s) for: 2 Day(s)
-Retention of daily backup point: 7 Day(s)
-Azure Backup Resource Group: Backup IRG
-How many restore point collections recovery points will be stored in Backupl RG on January 10?
-09
-0 10
-Next >
+You have the following Azure resources: a virtual machine named VM1 a Recovery Services vault named Vault1 On January 1, 
+you configure backups for VM1 by using the following backup policy: Frequency: Daily Time: 23:00 Timezone: (UTC) Coordinated Universal Time Retain instant recovery snapshot(s)
+for: 2 Day(s) Retention of daily backup point: 7 Day(s) Azure Backup Resource Group: 
+Backup1RG How many restore point collections recovery points will be stored in Backup1RG on January 10? 
+Select only one answer.
+
+a. 2
+b. 7
+c. 9
+d. 10
+
+Correct Answer: b. 7
+
 Question 22 of 28
-You have a Recovery Services vault named Recoveryl that includes a backup policy named Policyl.
-You back up several Azure virtual machines to Recoveryl by using Policyl.
-You need to view the Azure Backup reports.
-What should you do first?
-• Create an Azure Log Analytics workspace.
-(D Modify the Backup Configuration settings of Recoveryl.
-C) Configure the Diagnostics settings of Recoveryl .
-Next >
+You have a Recovery Services vault named Recovery1 that includes a backup policy named Policy1. 
+You back up several Azure virtual machines to Recovery1 by using Policy1. You need to view the Azure Backup reports. What should you do first?
+Select only one answer.
+
+a. Configure the Diagnostics settings of Recovery1.
+b. Create an Azure Log Analytics workspace.
+c. Modify the Backup Configuration settings of Recovery1.
+
+Correct Answer: b. Create an Azure Log Analytics workspace.
+
 
 Question 23 of 28
-You have a Recovery Services vault named Vaultl that has soft delete enabled.
-Vaultl stores backups for the following Azure resources:
-• an Azure virtual machine named VMI
-• an Azure file share named sharel
-• a SQL Server on Azure virtual machine named SQLI
+You have a Recovery Services vault named Vault1 that has soft delete enabled.
+Vault1 stores backups for the following Azure resources:
+- an Azure virtual machine named VM1
+- an Azure file share named share1
+- a SQL Server on Azure virtual machine named SQL1
+
 Which backups are protected by soft delete?
-C) VMI only
-C) sharel only
-@ VMI and SQLI only
-C) VMI, share 1, and SQLI
-Next >
+
+Select only one answer.
+1. share1 only
+2. VM1 and SQL1 only
+3. VM1 only
+4. VM1, share1, and SQL1 
+
+Ans:  VM1 and SQL1 only
+
 Question 24 of 28
 You have an Azure Kubernetes Service (AKS) cluster named AKSI that runs Kubernetes version 1.16, 10,
 You need to ensure that you can run a Windows Server container in AKSI.
 What should you do first?
-@ Add a node pool to AKSI.
-C) Modify the networking settings of AKSI.
-C) Integrate AKSI and the Azure container registry.
-C) Upgrade AKSI to a newer version of Kubernetes.
-Next >
+
+Add a node pool to AKS1.
+Modify the networking settings of AKSI.
+Integrate AKSI and the Azure container registry.
+Upgrade AKSI to a newer version of Kubernetes.
+
+Ans: Add a node pool to AKS1
 
 Question 25 of 28
 You have an Azure subscription that contains an Azure container registry named Contos02020.
 You plan to create an Azure Kubernetes Service (ARS) cluster named AKS' that has the following settings:
-Kubernetes version: I .16.10
-Node pools:l
+Kubernetes version: 1.16.10
+Node pools:1
 Virtual nodes: Disabled
 Authentication method: Service principal
 Network configuration: Basic
-You need to ensure that you can integrate AKS' and Contos02020.
+You need to ensure that you can integrate AKS1 and Contos02020.
 Which AKSI settings should you modify?
+
 Kubernetes version
-Virtual n Odes
-@ Authentication rnethod
-C) Network configuration
+Virtual nodes
+Authentication rnethod
+Network configuration
+
+Ans: Authentication rnethod
+
 Question 26 of 28
 You have an Azure Active Directory (Azure AD) tenant that contains a group named Groupl that has the following users:
 User 1- Member
 User2- Member
 User3- Guest
-Userl is an owner of Groupl.
+User1 is an owner of Groupl.
 You create an access that has the following settings:
-Review name: Reviewl
+Review name: Review1
 Start date: 07/15/2020
-One t
+Frequency: Onetime
 End date: 08/14/2020
 Users to review: Members of a group
 Scope: Everyone
-Group: Groupl
+Group: Group1
 Reviewers: Members (self)
-Auto apply results to resource; Disable
-• It don't respond: Remove
-The provide the follOW•ing to the DO you membership in question:
+Auto apply results to resource: Disable
+If reviewers don't respond: Remove access
+The users provide the following to the Do you require membership in question? access review question:
+• User1: No
 • User2: Yes
-User3: did not answer
+• User3: did not answer
 Which users will be members of Groupl on 08/20/2020?
+
 User 2 only
 Userl and User2 only
-@ User2 and User 3 only
-CD User 1, User2, and User3
-Next >
+User2 and User 3 only
+User 1, User2, and User3
+
+Ans: User 2 only
 
 Question 27 of 28
-You have an Azure subscription that contains a user named Userl, a security group named Groupl, and a virtual machine named
-VMI,
-You enable a system-assigned managed identity for
-To which identities can you assign the Reports reader role?
-(D Userl only
-C) Userl and Groupl only
-C) Userl and VMI only
-@ Userl, Groupl, and VMI
-Next >
+You have an Azure subscription that contains a user named User1, a resource group named RG1, and a virtual machine named VM1.
+You enable a system-assigned managed identity for VM1.
+To which identities can you assign the Reports Reader role?
+
+Select only one answer.
+1. User1 and RG1 only
+2. User1 and VM1 only 
+3. User1 only
+4. User1, RG1, and VM1 
+
+Ans: User1 and VM1 only 
+
 Question 28 of 28
-You have an Azure Active Directory (Azure AD) tenant named contoso.com that contains a user named Ben Smith.
+You have a Microsoft Entra tenant named contoso.com that contains a user named Ben Smith.
 You configure a Password protection for contoso.com that includes the following Custom banned passwords settings:
-• Enforce custom list: Yes
-Custom banned password list: Contoso
-Which password can be used by Ben Smith?
-O FgRs01
-@ COntOs0123
-O CONTOS0123
-O Cont0123so
-Submit >
+- Enforce custom list: Yes
+- Custom banned password list: Contoso
+- Which password can be used by Ben Smith?
+
+Select only one answer.
+1. C0nt0s0123 
+2. CONTOSO123
+3. Conto123so 
+4. FgRs01 
+
+Ans: FgRs01 
 
 Question 3 of 28
 You have the following Azure resources:
-Azure Key Vault named KeyVault1
-Azure App Service named WebApp1
+• Azure Key Vault named KeyVaultl
+• Azure App Service named WebApp1
 You need to ensure that WebApp1 can access KeyVault1 by using Azure Active Directory (Azure AD) authentication.
-Which two settings can be used to configure WebApp1? Each correct answer presents a complete solution.
-User assigned managed identity
+Which two settings can be used to configure WebAppl? Each correct answer presents a complete solution.
+
+User assigned managed identity    
 Application settings
-C] TLS/SSL bindings
+TLS/SSL bindings
 App Service Authentication
-System assigned managed identity
-Next >
+System assigned managed identity  
+
+Ans: 
+User assigned managed identity
+System assigned managed identity 
+
 Question 13 of 28
 You have the following Azure virtual machines that run Windows Server 2019:
 Serverl- connected to VirtualNET1 and has a Wingtiptoys.com DNS suffix configured in Windows Server 2019
 Server2- connected to VirtualNET1 and has a Fabrikam.com DNS suffix configured in Windows Server 2019
-• Server3• connected to VirtualNET2 and has a Wingtiptoys.com DNS suffix configured in Windows Server 2019
-Server4• connected to VirtualNET2 and has a Fabrikam.com DNS suffix configured in Windows Server 2019
+Server3- connected to VirtualNET2 and has a Wingtiptoys.com DNS suffix configured in Windows Server 2019
+Server4- connected to VirtualNET2 and has a Fabrikam.com DNS suffix configured in Windows Server 2019
 You create a private DNS zone named fabrikam.com and add the following virtual network links to fabrikam.com:
+
 • Linkl- connected to VirtualNET1 and has auto registration enabled
-Link2- connected to VirtualNET2 and has auto registration enabled
+• Link2- connected to VirtualNET2 and has auto registration enabled
 Which virtual machines will register a DNS record in fabrikam.com?
-C) Server2 only
-(D Serverl and Server2 only
-C) Server2 and Server4 only
-@ Server 1, Server2, Server3, and Server4
-Next >
+
+Server2 only
+Serverl and Server2 only
+Server2 and Server4 only
+Server 1, Server2, Server3, and Server4
+
+Ans: Server2 and Server4 only
 
 Question 16 of 28
-You have an Azure subscription that contains a storage account named storagel and the following virtual machines:
-• VMI has a public IP address of 13.68.158.24 and is connected to VNET1/Subnet1
-• VM2 has a public IP address of 52.255.145.76 and is connected to VNET1/Subnet1
-• VM3 has a public IP address of 13.68.158.50 and is connected to VNET1/Subnet2
+You have an Azure subscription that contains a storage account named storage1 and the following virtual machines:
+- VM1 has a public IP address of 13.68.158.24 and is connected to VNET1/Subnet1
+- VM2 has a public IP address of 52.255.145.76 and is connected to VNET1/Subnet1
+- VM3 has a public IP address of 13.68.158.50 and is connected to VNET1/Subnet2
+
 The subnets have the following service endpoints:
-• Subnetl has a Microsoft.Storage service endpoint
-• Subnet2 does not have any service endpoint
-Storagel has a firewall configured to allow access from the 13.68.lSg.O/24 IP address range only.
-You need to identify which virtual machines can access storagel .
-What should you identify?
-C) VMI only
-O VM3 only
-O VMI and VM2 only
-@ VMI and VM3 only
-O VMI, VM2. and VM3
-Next >
+- Subnet1 has a Microsoft.Storage service endpoint
+- Subnet2 does NOT have any service endpoint
+- Storage1 has a firewall configured to allow access from the 13.68.158.0/24 IP address range only.
+
+Which virtual machines can access storage1.
+
+a. VM1 and VM2 only
+b. VM1 and VM3 only
+c. VM1 only
+d. VM1, VM2, and VM3
+e. VM3 only
+
+Correct Answer: b. VM1 and VM3 only
+
 Question 25 of 28
 You have the following containerized applications:
-• Appl that runs in a Server Core installation Of Windows Server container
+• Appl that runs in a Server Core installation of Windows Server container
 • App2 that runs in a Nano Server container
 • App3 that runs in a Linux container
 • App4 that runs in a Linux container
 What is the minimum number of Azure Kubernetes Service (AKS) node pools required to run all the applications?
-01
-Next >
+1
+2
+3
+4
+
+Ans: 3
+Expalination: 
+Windows Server and Nano Server containers require separate node pools because they have different OS requirements. 
+Linux containers can share the same node pool.
+
 
 Question 26 of 28
-You have an Azure Active Directory (Azure AD) tenant that contains the following users:
-Userl has a Department set to Sales and a Country set to USA
-• User2 has a Department set to Marketing and a Country set to USA
-• User3 has a Department set to Sales and a Country set to DE
-• User4 has a Department set to Marketing and a Country set to DE
-You create a group named Groupl that has the following dynamic membership rule.
-user. country -eq "USA" -and user. department
-Which users are members of Groupl?
-C) Userl and User2 only
-C) Userl and User3 only
-C) User2 and User3 only
-@ User 1, User2, and User3 only
-C) User 1, User2, User3 and User4
-Next >
+You have an Azure AD tenant that contains the following users: 
+• User1 has a Department set to Sales and a Country set to USA 
+• User2 has a Department set to Marketing and a Country set to USA 
+• User3 has a Department set to Sales and a Country set to DE 
+• User4 has a Department set to Marketing and a Country set to DE 
+You create a group named Group1 that has the following dynamic membership rule. 
+user.country -eq "USA" -and user.department -eq "Marketing" -or user.department -eq "Sales" Which users are members of Group1? 
+Select only one answer. 
+User1 and User2 only 
+User1 and User3 only 
+User2 and User3 only 
+User1, User2, and User3 only 
+User1, User2, User3 and User4 
+
+Answer: User1, User2, and User3 only
+
 Question 27 Of 28
 You have 10 Azure Active Directory (Azure AD) tenants.
--eq
-" "larketing"
--or user. department
--eq
-"Sales"
-You need to ensure that a user named Adminl can onboard the tenants for access reviews. The solution must use the principle of
-least privilege,
+You need to ensure that a user named Adminl can onboard the tenants for access reviews. 
+The solution must use the principle of least privilege,
 Which role should you assign to Adminl ?
+
 user administrator
-C) Group administrator
-(D Security administrator
-C) Compliance administrator
-Next >
+Group administrator
+Security administrator
+Compliance administrator
+
+Ans: User administrator
 
 Question 5 of 28
 You have an Azure container registry named Registryl.
 You enable the admin user for Registryl.
-Which username should you use to connect to Registryl as an admin user?
-O root
-O Admin
-C) Administrator
-@ Registry 1
-CD Registry 1 .azurecr.io
-Next >
+Which username should you use to connect to Registry1 as an admin user?
+
+root
+Admin
+Administrator
+Registry 1
+Registry 1.azurecr.io
+
+Ans: Registry 1
+
 Question 20 of 28
 You have an Azure subscription that contains the following resources:
-VMI- a virtual machine that runs Microsoft SQL Server and is deployed in the West US location
+VM1- a virtual machine that runs Microsoft SQL Server and is deployed in the West US location
 VM2- a virtual machine that runs Microsoft SQL Server and is deployed in the East US location
-SQLI- an Azure SQL Server deployed to the West LIS location
+SQL1- an Azure SQL Server deployed to the West LIS location
 Vaultl- a Recovery Services vault deployed to the West US location
-Which resources can you back up to Vaultl?
-O VMI only
-O VMI and VM2 only
-@ VMI and SQLI only
-O VMI, VM2, and SQLI
-Next >
+Which resources can you back up to Vault1?
+VM1 only
+VM1 and VM2 only
+VM1 and SQL1 only
+VMI, VM2, and SQL1
 
-Renewal assessment for Microsoft Certified: Axure Administrator Assxiate
+Ans: VM1 and SQL1 only
+
 Question I 28
-plan to dephy the following Anre —b
-WebAppI. that uses NET 6 rortime stæk
-• that uses ASP.NET V4.8 r"ne stü
-• WebApp3, that Java runtime stack
-• WebApp4. that uses PHP runtime
-Ya' to create servQe
-What is the "inimum of
-02 •
-Renewal assessment for Microsoft Certified: Azure Administrator
+You plan to deploy the following Azure web apps:
+- WebApp1, that uses the .NET 6 runtime stack
+- WebApp2, that uses the ASP.NET V4.8 runtime stack
+- WebApp3, that uses the Java 17 runtime stack
+- WebApp4, that uses the PHP 8.0 runtime stack
+You need to create the app service plans for the web apps.
+What is the minimum number of app service plans that should be created?
+Select only one answer.
+
+1. 1
+2. 2 
+3. 3
+4. 4 
+
+Ans: 4
+Explaination:
+Each of these web apps uses a different runtime stack.
+Therefore, you will need to create a separate app service plan for each runtime stack.
+So, the minimum number of app service plans that should be created is four.
+
 Question 2 of 28
-have an Azure web app named WebApp1.
-YCRI discover that options are unavailable for
-YCRI need to back up W)App1.
+You have an Azure web app named WebApp1.
+You discover that backup options are unavailable for WebApp1.
+You need to back up WebApp1.
 What should you do first?
-C) Modify the platform settings of WebApp1.
-O Modify the Application settings of WebAw1.
-O Scale up tie app service plane
-C) Scale the app service
-Next >
 
-Renewal assessment for Microsoft Certified: Azure Administrator Ass«iate
+Modify the platform settings of WebApp1.
+Modify the Application settings of WebApp1.
+Scale up the app service plan.    
+Scale out the app service plan.
+
+Ans: Scale up the app service plan.
+
 Question 3 of 28
-Vou have an Azure web app runed Cmtos02023.
-You add a deployment slot to Contos02023
-Vou need to be able to a deployment sht with
+You have an Azure web app named Contoso2023.
+You add a deployment slot to Contoso2023 named Slot1.
+You need to be able to perform a deployment slot swap with preview.
 What should you modify?
-C) application for Cmtos02023
-C) settings Contos02023
-C) application fcy Contos02023-Slot1
-C) geruyal settings Contos02023-SJotI
-Next )
-Renewal assessment for Microsoft Certified: Azure Administrator Associate
+
+Select only one answer.
+1. application settings for Contoso2023
+2. application settings for Contoso2023-Slot1 
+3. general settings for Contoso2023
+4. general settings for Contoso2023-Slot1
+
+Ans: application settings for Contoso2023-Slot1
+
 Question 4 of 28
-You plan to deploy the following Azure web Qps:
-WebApp1, that runs on Wirdows Serv« 2016
-WebAppZ that runs on WiMo.vs Serer 2022
-WebApp3, that runs on Ubuntu Server
-WebApp4, that runs on Red Hat Enteprise Limn
-You need to create the service plans for the web
-What is the minimum number of app service plus that hld
-Next )
+You plan to deploy the Azure web apps:
+• WebApp1. that runs on Windovvs Server 2016
+• WebApp2. that runs on Windows Server 2022
+• WebApp3. that runs onthat runs Ubuntu Server
+• WebApp4. that runs on Red Hat Enterprise Linux
+You need to create the app service plans for the web apps.
+What is the nurnber of app service plans that should be created?
+1
+2
+3
+4
 
-Renewal assessment for Microsoft Certified: Azure Administrator Associate
+Ans: 2
+
 Question 5 of 28
-have a Docker image named Ynagel frat contirs a
-need to deploy Imagel to Azure make tip to
-Which two Azure services should you Each sdutim.
+You have a Docker image named Image1 that contains a corporate app.
+You need to deploy Image1 to Azure and make the app accessible to users.
+Which two Azure services should you deploy? 
+Each correct answer presents complete solution.
+
 Azure App service
-a virtual
-Azure Conting Registry
-a conwner instance
-Next >
-Renewal assessment for Microsoft Certified: Azure AdminÉtrator Associate
-(hJestuon 6 of 28
-plan to aeate an Alure container instaxe naned conthrl ttut a nun«i 1.
-need to ensure that cmtainerl ins —tent Stu*
-Which Azure resources should deploy for the *Gstent stcr*?
-Q) an container registy
-O an Azure a fikshare
-O an Azure Storage account and a blci contaiær
-(D an Azure SQL datiase
-Next
+a virtual machine
+Azure Container Registry 
+a container instance
 
-Renewal assessment for Microsoft Certified: Azure Administrator Associate
+Ans:
+Azure Container Registry 
+Azure App service
+
+estuon 6 of 28
+You plan to create an Azure container instance named container1 that will use a Docker image named Image1.
+You need to ensure that container1 has persistent storage.
+Which Azure resources should you deploy for the persistent storage?
+
+Select only one answer.
+1. an Azure container registry
+2. an Azure SQL database
+3. an Azure Storage account and a blob container
+4. an Azure Storage account and a file share
+
+Ans: an Azure Storage account and a file share
+
 Question 7 of 28
-haw an Azure subscription contains ttw following resources:
-• a storage account named storage123
-• a container instance named AppContainer
+You have an Azure subscription that contains the following resources: 
+a storage account named storage123 
+a container instance named AppContainer 
 The subscription contains a virtual network named VirtualNet4 that has the following subnets:
-• SubnetA- storage123 is connected to SubnetA.
-• SubnetB• AppContainer is connected to SubnetB.
-• SubnetC. No resources.
-You plan to deploy an Azure container instance ryamed containers to VirtuoINet4.
-To which subnets can you deploy contaner5?
-C) SubnetB only
-C) SubnetC only
-C) SubnetB and SubnetC only
-C) SubnetA. SubnetB. and SubnetC
-Next >
-Renewal assessment for Microsoft Certified: Azure Administrator Associate
+SubnetA- has a Microsoft.Storage service endpoint.
+SubnetB- AppContainer is deployed to SubnetB.
+SubnetC- No resources are connected to SubnetC.
+You plan to deploy an Azure container instance named container5 to VirtualNet4. To which subnets can you deploy container5?
+Select only one answer.
+
+a. SubnetA, SubnetB, and SubnetC
+b. SubnetB and SubnetC only
+c. SubnetB only
+d. SubnetC only
+
+Correct Answer: b. SubnetB and SubnetC only
+
 Question 8 of 28
-Vou have an Azure Stcvage account named storagel that uses following storage services:
-• Tables
-You plan to implement Microsoft Defender tcg Ck)ud.
-Which storage services C.MI be protected by using Microsoft Defender for Cloud?
-(D blobs
-C) files only
-C) blobs only
-C) files and queues only
-C) blobs, files, tables, and queues
-Next >
+You have an Azure Storage account named storage1 that uses following storage services:
+Blobs
+Files
+Queues
+Tables
+You plan to implement Microsoft Defender for Cloud.
+Which storage services can be protected by using Microsoft Defender for Cloud?
+blobs only
+files only
+blobs and files only
+files and queues only
+blobs, files, tables, and queues
 
-Renewal assessment for Microsoft Certified: Azure Associate
+Ans: blobs and files only
+
 Question 9 of 28
-You have an Azure Storage account named storagel.
-You need to provide time-limited to
-What shoukf you use?
-C) an access key
-(D a role assignment
-C) an access policy
-(D a access signature (SAS)
-Next >
-Renewal assessment for Microsoft Certified: Azure Administrator
-Question 10 of 28
-You have an Azure storage account named storagel that has the follming settings:
-• container 1: blob container
-• sharel: file share
-• Tablel: table
-Queuel: queue
-You rotate an access key named key? in
-Which resource or resources can you access by
-C) containerl only
-C) Sharel
-C) containerl and sharel only
-C) Tablel and Queuel only
-C) containerl, sharel, Tablel and (h.euel
+You have an Azure Storage account named storage1. You need to provide time-limited access to storage1. 
+What should you use? 
+Select only one answer. 
 
+• an access key 
+• a role assignment 
+• an access policy 
+• a shared access signature (SAS) 
+
+Answer:  a shared access signature (SAS) 
+Explaination:
+To provide time-limited access to your Azure Storage account named storage1, you should use a shared access signature (SAS). 
+A SAS token allows you to grant limited access to your storage resources without sharing your account key, and you can specify the start and expiry time for the access.
+
+Question 10 of 28
+You have an Azure storage account named storage 1 that has the following settings:
+• container 1: blob container
+• share 1: file share
+• Tablel: table
+• Queue 1: queue
+You rotate an access key named key2 in storagel.
+Which resource or resources can you access by using key2?
+
+containerl only
+Sharel only
+containerl and sharel only
+Tablel and Queue 1 only
+container 1, sharel, Tablel and Queue 1
+
+Ans: container1, share1, Table1, and Queue1
 Question 11 of 28
 Your Azure Active Directory contains three users nuned Userl. and Usea
 have an Azure storage account named storaqel that has
