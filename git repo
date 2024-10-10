@@ -555,7 +555,7 @@ Select only one answer.
 3. Add an extension to VM1.
 4. Modify the address space of VNET1.
 
-Ans: Modify the address space of VNET1.
+Ans: Add a new subnet to VNET1.
 Explaination:
 To deploy Azure Bastion, you need to create a dedicated subnet named AzureBastionSubnet within your virtual network. This subnet must have a prefix of at least /27.
 Given your current address spaces, you don’t have enough available address space to create this subnet. Therefore, the first step is to modify the address space of VNET1 to ensure you have enough space to add the required subnet.
