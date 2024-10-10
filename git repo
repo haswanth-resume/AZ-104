@@ -46,7 +46,9 @@ Select only one answer.
 Ans: Publish 
 Explaination:
 To ensure that WebApp1 uses the ASP.NET V4.8 runtime stack, you should modify the Publish setting.
-Since ASP.NET V4.8 is a framework that runs on Windows, you need to publish the app as a Code rather than a Docker Container. Docker containers are typically used for Linux-based deployments or custom environments, whereas ASP.NET V4.8 is best supported directly on Windows without containerization.
+Since ASP.NET V4.8 is a framework that runs on Windows, you need to publish the app as a Code rather than a Docker Container.
+Docker containers are typically used for Linux-based deployments or custom environments,
+whereas ASP.NET V4.8 is best supported directly on Windows without containerization.
 
 #### Question 3 of 26
 You plan to deploy an Azure web app that will have the following settings:
@@ -354,7 +356,7 @@ Select only one answer.
 
 Ans: 5
 Explaination:
-The maximum number of days that can be set for the retention period of virtual machine instant recovery snapshots in an Azure standard backup policy is 5 days1.
+The maximum number of days that can be set for the retention period of virtual machine instant recovery snapshots in an Azure standard backup policy is 5 days.
 
 #### Question 20 of 26
 You have an Azure subscription.
@@ -519,7 +521,8 @@ Select only one answer.
 4. WebApp1, WebApp2, WebApp3 and WebApp4
 
 Ans: WebApp1 and Web3 only
-Azure WebJobs can be used with web apps running on both Windows and Linux operating systems, as well as with Docker containers on both platforms. 
+Azure WebJobs can be used with web apps running on both Windows and Linux operating systems,
+as well as with Docker containers on both platforms. 
 However, WebJobs for Linux and Docker containers are currently in preview.
 
 #### Question 5 of 26
@@ -557,8 +560,10 @@ Select only one answer.
 
 Ans: Add a new subnet to VNET1.
 Explaination:
-To deploy Azure Bastion, you need to create a dedicated subnet named AzureBastionSubnet within your virtual network. This subnet must have a prefix of at least /27.
-Given your current address spaces, you don’t have enough available address space to create this subnet. Therefore, the first step is to modify the address space of VNET1 to ensure you have enough space to add the required subnet.
+To deploy Azure Bastion, you need to create a dedicated subnet named AzureBastionSubnet within your virtual network.
+This subnet must have a prefix of at least /27.
+Given your current address spaces, you don’t have enough available address space to create this subnet. 
+Therefore, the first step is to modify the address space of VNET1 to ensure you have enough space to add the required subnet.
 
 #### Question 14 of 26
 You have an Azure subscription that contains a virtual machine named VM1 and a storage account named storage1.
@@ -591,8 +596,6 @@ Select all answers that apply.
 5. VNet1
 Ans: NIC1, Subnet1
 
-
-
 #### Question 16 of 26
 You have an Azure subscription that contains the following virtual machines:
 - VM1, a virtual machine that runs Windows Server 2019
@@ -601,6 +604,7 @@ You have an Azure subscription that contains the following virtual machines:
 You use Azure Backup to back up the three virtual machines.
 Which virtual machine or virtual machines can use file-level restore?
 Select only one answer.
+
 1. VM1 and VM2 only
 2. VM1 and VM3 only
 3. VM1 only
@@ -618,7 +622,6 @@ Select only one answer.
 2. a backup vault
 3. a recovery services vault
 4. a storage account
-
 
 Ans: a recovery services vault
 
