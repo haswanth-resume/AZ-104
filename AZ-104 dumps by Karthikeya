@@ -1,8 +1,9 @@
 1. You have the following Azure resources:
-• Azure Key Vault named KeyVaultl
+• Azure Key Vault named KeyVault1
 • Azure App Service named WebApp1
 You need to ensure that WebApp1 can access KeyVault1 by using Azure Active Directory (Azure AD) authentication.
-Which two settings can be used to configure WebAppl? Each correct answer presents a complete solution.
+Which two settings can be used to configure WebAppl? 
+Each correct answer presents a complete solution.
 
 User assigned managed identity    
 Application settings
@@ -15,7 +16,7 @@ User assigned managed identity
 System assigned managed identity 
 
 2. You plan to deploy the Azure web apps:
-• WebApp1. that runs on Windovvs Server 2016
+• WebApp1. that runs on Windows Server 2016
 • WebApp2. that runs on Windows Server 2022
 • WebApp3. that runs onthat runs Ubuntu Server
 • WebApp4. that runs on Red Hat Enterprise Linux
@@ -27,6 +28,9 @@ What is the nurnber of app service plans that should be created?
 4
 
 Ans: 2
+Explaination:
+One app service plan for the web apps running on Windows Server (WebApp1 and WebApp2).
+One app service plan for the web apps running on Linux (WebApp3 on Ubuntu Server and WebApp4 on Red Hat Enterprise Linux).
 
 3. You have an Azure web app named WebApp1.
 You discover that backup options are unavailable for WebApp1.
@@ -105,7 +109,7 @@ Configure the Access control (IAM) settings Of storage1.
 Configure the Firewalls and virtual networks settings of storage1 .
 Provide User1 with the access key for storage1.
 
-Ans: Configure the Firewalls and virtual networks settings of storage1.
+Ans: Configure the Access control (IAM) settings Of storage1.
 
 You have an Azure Storage account named storage1 that uses following storage services:
 Blobs
@@ -114,13 +118,14 @@ Queues
 Tables
 You plan to implement Microsoft Defender for Cloud.
 Which storage services can be protected by using Microsoft Defender for Cloud?
+
 blobs only
 files only
 blobs and files only
 files and queues only
 blobs, files, tables, and queues
 
-Ans: blobs and files only
+Ans: blobs, files, tables, and queues
 
 You have an Azure Storage account named storage1 .
 You create the following encryption scopes for storage 1:
@@ -167,7 +172,8 @@ Ans: From the zone, add a virtual network link.
 
 You have an Azure virtual machine named VM1 that automatically registers in an Azure private DNS zone named contoso.com.
 VM1 hosts a website named Site1.
-You need to ensure that Site1 can be resolved by using a URL of http://www.contoso.com. The solution must ensure that if the IP
+You need to ensure that Site1 can be resolved by using a URL of http://www.contoso.com. 
+The solution must ensure that if the IP
 address of VM1 changes, www.contoso.com will resolve to the changed IP address.
 Which DNS record type should you add to contoso.com?
 A
@@ -208,9 +214,9 @@ but not for other resources like container instances or load balancers.
 With auto-registration enabled for the private DNS zone contoso.com and VNet1, VM1 and VM2 will be automatically registered. 
 Container instances and load balancers do not support auto-registration in private DNS zones.
 You have an Azure subscription that includes a network security group named NSG1.
-You plan to add an inbound security rule named Rulel to NSG1.
-You need to configure a priority for Rulel. Rulel must have the highest priority for inbound security rules in NSG1.
-Which priority should you configure for Rulel?
+You plan to add an inbound security rule named Rule1 to NSG1.
+You need to configure a priority for Rule1. Rule1 must have the highest priority for inbound security rules in NSG1.
+Which priority should you configure for Rule1?
 
 0
 1
@@ -265,18 +271,18 @@ a service endpoint
 a routing table
 
 Ans: a service endpoint
---------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question 19 of 28
-You have an Azure virtual network named VNETI that has an IP address space of 192.168.0.0/16 and the following subnets:
-• Subnetl- has an IP address range of 192.168.1.0/24 and is connected to 15 VMS
+You have an Azure virtual network named VNET1 that has an IP address space of 192.168.0.0/16 and the following subnets:
+• Subnet1- has an IP address range of 192.168.1.0/24 and is connected to 15 VMS
 • Subnet2- has an IP address range of 192.168.2.0/24 and does NOT have any VMS connected
-You need to ensure that you can deploy Azure Firewall to VNETI.
+You need to ensure that you can deploy Azure Firewall to VNET1.
 What should you do?
 
 Add a new subnet to VNET1.
 Add a service endpoint to Subnet2.
 Modify the subnet mask Of Subnet2.
-Modify the IP address space Of VNETI.
+Modify the IP address space Of VNET1.
 
 Ans: Add a new subnet to VNET1.
 
@@ -324,6 +330,7 @@ VM1 and SQL1 only
 VM1, VM2, and SQL1
 
 Ans: VM1 and SQL1 only
+
 Question 23 of 28
 You have an Azure subscription that includes a virtual machine named VM1.
 You need to protect VM1 by using Azure Backup.
@@ -360,7 +367,7 @@ Question 25 of 28
 You plan to create an Azure Kubernetes cluster that will use the following settings:
 • Kubernetes cluster name: Kubernetes1
 • Cluster preset configuration: Standard ($$)
-• Kubernetes version: 122.6
+• Kubernetes version: 1.22.6
 • Enable virtual nodes: Off
 • Network configuration: Kubenet
 You need to add a Windows Server node pool to Kubernetes1 .
@@ -496,7 +503,8 @@ SubnetC only
 SubnetB and SubnetC only
 SubnetA. SubnetB, and SubnetC
 
-Ans:SubnetC only
+Ans:SubnetB and SubnetC only
+
 Question 6 Of 28
 You plan to create an Azure container instance named containerl that will use a Docker image named Imagel.
 You need to ensure that containerl has persistent storage.
