@@ -1,6 +1,7 @@
 https://medium.com/@mmkr.scm/az-104-renewal-exam-questions-bb66a568631b
 
-1. You recently create an Azure virtual machine standard backup policy. You need to configure a retention period for virtual machine instant recovery snapshots.
+1. You recently create an Azure virtual machine standard backup policy.
+You need to configure a retention period for virtual machine instant recovery snapshots.
 What is the maximum number of days that can be set for the retention period? Select only one answer.
 
 a. 5
@@ -10,10 +11,15 @@ d. 30
 
 Correct Answer : a. 5
 
-2. You have the following Azure resources: a virtual machine named VM1 a Recovery Services vault named Vault1 On January 1, 
-you configure backups for VM1 by using the following backup policy: Frequency: Daily Time: 23:00 Timezone: (UTC) Coordinated Universal Time Retain instant recovery snapshot(s)
-for: 2 Day(s) Retention of daily backup point: 7 Day(s) Azure Backup Resource Group: 
-Backup1RG How many restore point collections recovery points will be stored in Backup1RG on January 10? 
+2. You have the following Azure resources: 
+a virtual machine named VM1 a Recovery Services vault named Vault1 On January 1, 
+you configure backups for VM1 by using the following backup policy:
+Frequency: Daily 
+Time: 23:00 
+Timezone: (UTC) Coordinated Universal Time Retain instant recovery snapshot(s)for: 2 Day(s) 
+Retention of daily backup point: 7 Day(s) 
+Azure Backup Resource Group: Backup1RG 
+How many restore point collections recovery points will be stored in Backup1RG on January 10? 
 Select only one answer.
 
 a. 2
@@ -24,7 +30,8 @@ d. 10
 Correct Answer: b. 7
 
 3. You have a Recovery Services vault named Recovery1 that includes a backup policy named Policy1. 
-You back up several Azure virtual machines to Recovery1 by using Policy1. You need to view the Azure Backup reports. What should you do first?
+You back up several Azure virtual machines to Recovery1 by using Policy1. You need to view the Azure Backup reports. 
+What should you do first?
 Select only one answer.
 
 a. Configure the Diagnostics settings of Recovery1.
@@ -50,7 +57,8 @@ d. VNet1, VNet2 or VNet3
 
 Correct Answer: c. VNet1 or VNet3 only
 
-5. You have an Azure subscription named Sub1. You plan to deploy a virtual machine scale set named VMSS1 in East US region. VMSS1 will have 8 instances. 
+5. You have an Azure subscription named Sub1.
+You plan to deploy a virtual machine scale set named VMSS1 in East US region. VMSS1 will have 8 instances. 
 What is the maximum number of availability zones that VMSS1 can use?
 Select only one answer.
 
@@ -85,7 +93,8 @@ d. User Administrator
 
 Correct Answer: d. User Administrator
 
-8. You have an Azure subscription that contains a user named User1, a resource group named RG1, and a virtual machine named VM1. 
+8. You have an Azure subscription that contains a user named User1, 
+a resource group named RG1, and a virtual machine named VM1. 
 You enable a system-assigned managed identity for VM1. 
 To which identities can you assign the Reports Reader role?
 Select only one answer.
@@ -97,7 +106,8 @@ d. User1, RG1, and VM1
 
 Correct Answer: b. User1 and VM1 only
 
-9. You have a Microsoft Entra tenant that contains a user named User1. You delete User1. You plan to restore the User1 object. 
+9. You have a Microsoft Entra tenant that contains a user named User1. 
+You delete User1. You plan to restore the User1 object. 
 What is the maximum number of days you have to restore User1?
 Select only one answer.
 a. 7 days
@@ -135,8 +145,13 @@ D) WebApp1
 Correct Answer: A) NSG1 or Subnet1 - not sure in any platform
 
 12. You have an Azure subscription that includes following resources:
-VNet1, a virtual network Subnet1, a subnet in VNet1 VM1, a virtual machine NIC1, a network interface of VM1 LB1, a load balancer 
-You create a network security group named NSG1. To which two Azure resources can you associate NSG1? Select all answers that apply.
+VNet1, a virtual network
+Subnet1, a subnet in VNet1 VM1, 
+a virtual machine NIC1,
+a network interface of VM1
+LB1, a load balancer 
+You create a network security group named NSG1. 
+To which two Azure resources can you associate NSG1? Select all answers that apply.
 
 a. LB1
 b. NIC1
@@ -147,7 +162,9 @@ e. VNet1
 Correct Answers: b. NIC1 and c. Subnet1
 
 13. You have an Azure subscription that contains a virtual machine named VM1 and a storage account named storage1. 
-You need to ensure that VM1 can access storage1 by using the Azure backbone. What should you configure?
+You need to ensure that VM1 can access storage1 by using the Azure backbone. 
+What should you configure?
+
 Select only one answer.
 a. a routing table
 b. a service endpoint
@@ -277,7 +294,8 @@ d. SubnetC only
 Correct Answer: b. SubnetB and SubnetC only
 
 24. You have an Azure storage account named storage1. 
-You need to ensure that a user named User1 can access storage1 only from January 1st to January 31st 2024. What should you do?
+You need to ensure that a user named User1 can access storage1 only from January 1st to January 31st 2024.
+What should you do?
 Select only one answer.
 
 a. Create a conditional access policy for User1
