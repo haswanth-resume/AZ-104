@@ -1,7 +1,8 @@
 1. You have Azure subscription that includes virtual network with following subnets: 
 • Subnet1, which has connected virtual machine 
 • Subnet2, which has connected web app 
-• Subnet3, which has connected container instance You plan to deploy container instance named container1.
+• Subnet3, which has connected container instance 
+You plan to deploy container instance named container1.
 To which subnets can you connect container1?
 Select only one answer. 
 
@@ -34,8 +35,10 @@ This will allow you to assign the necessary permissions to User1, enabling acces
 3. You have an Azure storage account named storage1. Three users use the following methods to access the data in storage1:
 • User1 uses the Azure portal 
 • User2 uses the Azure Storage Explorer 
-• User3 uses File Explorer in Windows 11 You generate a storage access signature named SAS1 for storage1. 
-Which user or users can access storage1 by using SAS1? Select only one answer. 
+• User3 uses File Explorer in Windows 11 
+You generate a storage access signature named SAS1 for storage1. 
+Which user or users can access storage1 by using SAS1?
+Select only one answer. 
 
 • User1 only 
 • User2 only 
@@ -126,7 +129,8 @@ The Azure subscription contains the following virtual networks:
 Contoso purchases a company named A. Datum Corporation. 
 A. Datum has an Azure subscription that contains an Azure AD tenant named adatum.com. Adatum.com contains the following virtual networks:
 • VNETA- deployed in the East US location 
-• VNETB- deployed in the West US location Which virtual networks can you peer to VNET1?
+• VNETB- deployed in the West US location 
+Which virtual networks can you peer to VNET1?
 
 • VNET2 only 
 • VNET2 and VNET3 only 
