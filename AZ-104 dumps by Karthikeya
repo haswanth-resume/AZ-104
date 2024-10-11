@@ -16,10 +16,10 @@ User assigned managed identity
 System assigned managed identity 
 
 2. You plan to deploy the Azure web apps:
-• WebApp1. that runs on Windows Server 2016
-• WebApp2. that runs on Windows Server 2022
-• WebApp3. that runs onthat runs Ubuntu Server
-• WebApp4. that runs on Red Hat Enterprise Linux
+• WebApp1, that runs on Windows Server 2016
+• WebApp2, that runs on Windows Server 2022
+• WebApp3, that runs onthat runs Ubuntu Server
+• WebApp4, that runs on Red Hat Enterprise Linux
 You need to create the app service plans for the web apps.
 What is the nurnber of app service plans that should be created?
 1
@@ -775,12 +775,13 @@ Authentication method
 Network configuration
 
 Ans: Authentication method
+Explaination:
 To ensure that you can integrate AKS1 and Contoso2020, 
 you should modify the Authentication method. Specifically, 
 you should use a managed identity instead of a service principal. 
 Managed identities simplify the process of integrating AKS with Azure Container Registry (ACR) by automatically handling the necessary permissions.
 
-Next >
+
 Question 25 Of 28
 You have the following containerized applications:
 • Appl that runs in a Server Core installation of Windows Server container
@@ -799,32 +800,32 @@ Windows Server and Nano Server containers require separate node pools because th
 Linux containers can share the same node pool.
 
 Question 26 of 28
-You have an Azure Active Directory (Azure AD) tenant that contains a group named Groupl that has the following users:
-• Userl- Member
+You have an Azure Active Directory (Azure AD) tenant that contains a group named Group1 that has the following users:
+• User1- Member
 • User2- Member
 • User3- Guest
-userl is an owner of Groupl.
+user1 is an owner of Group1.
 You create an access review that has the following settings:
-• Review name: Review I
+• Review name: Review 1
 • start date: 05/15/2022
 Frequency: One time
 • End date: 06/14/2022
 • Users to review. Members of a group
 • Scope: Everyone
-• Group: Groupl
+• Group: Group1
 • Reviewers: Members (self)
 • Auto apply results to resource: Disable
 • If reviewers don't respond: Remove access
 The users provide the following responses to the DO you require membership in Group'? access review question:
-• user I: NO
+• user1: No
 • User2: Yes
 • User3: did not answer
 Which users Will be members Of Groupl on 06/20/2022?
 
 User2 only
-userl and user2 only
+user1 and user2 only
 User2 and User3 only
-User I, User2, and User3
+User 1, User2, and User3
 
 Ans: User2 only
 
@@ -839,20 +840,20 @@ Compliance administrator
 
 Ans: User administrator
 
-Question 28 of 2B
+Question 28 of 28
 You have an Azure Active Directory tenant that contains the following identities:
-• User l. a user in Azure Active Directory
-• Group 1. a security group that uses dynamic user membership
-• Group2. a Microsoft 365 group that uses assigned membership
-• Group3. a security group that uses assigned membership
+• User1, a user in Azure Active Directory
+• Group1, a security group that uses dynamic user membership
+• Group2, a Microsoft 365 group that uses assigned membership
+• Group3, a security group that uses assigned membership
 Which identity or identities can be added as members of Group3?
 
-Userl Only
-Userl and Groupl only
-Userl and Group2 only
-User 1. Group 1 and Group2
+User1 Only
+User1 and Group1 only
+User1 and Group2 only
+User1. Group1 and Group2
 
-Ans: Userl and Group2 only
+Ans: User1 and Group2 only
 Expalination: 
 For a security group with assigned membership like Group3, you can add both users and other groups with assigned membership.
 However, you cannot add groups with dynamic membership directly.
@@ -942,7 +943,7 @@ SubnetC only
 SubnetB and SubnetC only
 SubnetA, SubnetB, and SubnetC
 
-Ans: SubnetB and SubnetC only -- not sure
+Ans: SubnetB and SubnetC only 
 
 Question 7 of 28
 You have a Docker image named Imagel that contains a corporate app.
@@ -961,8 +962,8 @@ Azure Container Registry
 
 Question 8 of 28
 You have an Azure Storage account named storage1.
-You create the following encryption scopes for storagel:
-Scopel that has an encryption type of Microsoft-managed keys
+You create the following encryption scopes for storage1:
+Scope1 that has an encryption type of Microsoft-managed keys
 Scope2 that has an encryption type of Customer-managed keys
 Which storage services can be used with Scope2?
 
@@ -972,7 +973,7 @@ blob and file only
 table and queue only
 blob, file, table, and queue
 
-Ans: blob and file only or blob, file, table, and queue -- not sure
+Ans: blob, file, table, and queue
 
 Question 9 of 28
 You have an Azure Storage account named storage1 that is configured to use the Hot access tier.
@@ -1023,8 +1024,8 @@ Ans:  Configure the Access control (IAM) settings of storage1.
 Question 12 of 28
 You have an Azure virtual machine named VM1 that automatically registers in an Azure private DNS zone named contoso.com.
 VMI hosts a website named Sitel.
-You need to ensure that Sitel can be resolved by using a URL of http:t/www.contoso.com. The solution must ensure that if the IP
-address of VM1 changes, mvw.contoso.com will resolve to the changed IP address.
+You need to ensure that Sitel can be resolved by using a URL of http:t/www.contoso.com.
+The solution must ensure that if the IPaddress of VM1 changes, mvw.contoso.com will resolve to the changed IP address.
 Which DNS record type should you add to contoso.com?
 
 SVR
@@ -1061,9 +1062,9 @@ A. Datum has an Azure subscription that contains an Azure AD tenant named adatum
 Answer: • VNET2 and VNETA only
 
 Question 14 Of 28
-You have an Azure virtual machine named VMI that connects to a virtual network named VNETI .
+You have an Azure virtual machine named VM1 that connects to a virtual network named VNET1 .
 You create a private DNS zone named contoso.com and add an A record named hostl to the zone.
-You need to ensure that VMI can resolve hostl.contoso.com.
+You need to ensure that VMI can resolve host1.contoso.com.
 What should you do?
 
 Modify the Access control (IAM) settings Of the zone.
@@ -1088,11 +1089,11 @@ Select only one answer.
 Answer: Add a new subnet to VNET1.
 
 Question 16 Of 28
-You have a proximity placement group named Proximityl.
+You have a proximity placement group named Proximity1.
 You plan to create the following Azure resources:
 
 a virtual machine named vm1
-a disk named Diskl
+a disk named Disk1
 a virtual network named VNET1
 a public IP address named IP1
 Which resources can you place in Proximity1 ?
@@ -1126,10 +1127,10 @@ Select only one answer.
 Ans: Priority for Rule5 to 250 
 
 Question 18 of 28
-You have an Azure virtual machine named VMI that connects to a virtual network named VNETI.
-A network security group (NSG) named NSGI allows connections to VMI from VNETI only.
-You need to add an inbound security rule to NSGI that meets the following requirements:
-• Allows Azure Backup to back up VMI
+You have an Azure virtual machine named VM1 that connects to a virtual network named VNET1.
+A network security group (NSG) named NSGI allows connections to VM1 from VNET1 only.
+You need to add an inbound security rule to NSG1 that meets the following requirements:
+• Allows Azure Backup to back up VM1
 • Minimizes the types of allowed inbound traffic
 What should you use as the source for the inbound security rule?
 
@@ -1195,7 +1196,8 @@ Correct Answer: b. 7
 
 Question 22 of 28
 You have a Recovery Services vault named Recovery1 that includes a backup policy named Policy1. 
-You back up several Azure virtual machines to Recovery1 by using Policy1. You need to view the Azure Backup reports. What should you do first?
+You back up several Azure virtual machines to Recovery1 by using Policy1. 
+You need to view the Azure Backup reports. What should you do first?
 Select only one answer.
 
 a. Configure the Diagnostics settings of Recovery1.
@@ -1204,14 +1206,12 @@ c. Modify the Backup Configuration settings of Recovery1.
 
 Correct Answer: b. Create an Azure Log Analytics workspace.
 
-
 Question 23 of 28
 You have a Recovery Services vault named Vault1 that has soft delete enabled.
 Vault1 stores backups for the following Azure resources:
 - an Azure virtual machine named VM1
 - an Azure file share named share1
 - a SQL Server on Azure virtual machine named SQL1
-
 Which backups are protected by soft delete?
 
 Select only one answer.
@@ -1223,20 +1223,20 @@ Select only one answer.
 Ans:  VM1 and SQL1 only
 
 Question 24 of 28
-You have an Azure Kubernetes Service (AKS) cluster named AKSI that runs Kubernetes version 1.16.10.
-You need to ensure that you can run a Windows Server container in AKSI.
+You have an Azure Kubernetes Service (AKS) cluster named AKS1 that runs Kubernetes version 1.16.10.
+You need to ensure that you can run a Windows Server container in AKS1.
 What should you do first?
 
 Add a node pool to AKS1.
-Modify the networking settings of AKSI.
-Integrate AKSI and the Azure container registry.
-Upgrade AKSI to a newer version of Kubernetes.
+Modify the networking settings of AKS1.
+Integrate AKS1 and the Azure container registry.
+Upgrade AKS1 to a newer version of Kubernetes.
 
-Ans: Upgrade AKSI to a newer version of Kubernetes.
+Ans: Upgrade AKS1 to a newer version of Kubernetes.
 
 Question 25 of 28
 You have an Azure subscription that contains an Azure container registry named Contos02020.
-You plan to create an Azure Kubernetes Service (ARS) cluster named AKS' that has the following settings:
+You plan to create an Azure Kubernetes Service (AKS) cluster named AKS1 that has the following settings:
 Kubernetes version: 1.16.10
 Node pools:1
 Virtual nodes: Disabled
@@ -1250,7 +1250,7 @@ Virtual nodes
 Authentication rnethod
 Network configuration
 
-Ans: Authentication rnethod
+Ans: Authentication method
 
 Question 26 of 28
 You have an Azure Active Directory (Azure AD) tenant that contains a group named Groupl that has the following users:
@@ -1340,7 +1340,7 @@ You create a private DNS zone named fabrikam.com and add the following virtual n
 Which virtual machines will register a DNS record in fabrikam.com?
 
 Server2 only
-Serverl and Server2 only
+Server1 and Server2 only
 Server2 and Server4 only
 Server 1, Server2, Server3, and Server4
 
@@ -1404,9 +1404,9 @@ Answer: User1, User2, and User3 only
 
 Question 27 Of 28
 You have 10 Azure Active Directory (Azure AD) tenants.
-You need to ensure that a user named Adminl can onboard the tenants for access reviews. 
+You need to ensure that a user named Admin1 can onboard the tenants for access reviews. 
 The solution must use the principle of least privilege,
-Which role should you assign to Adminl ?
+Which role should you assign to Admin1 ?
 
 user administrator
 Group administrator
@@ -1416,15 +1416,15 @@ Compliance administrator
 Ans: User administrator
 
 Question 5 of 28
-You have an Azure container registry named Registryl.
-You enable the admin user for Registryl.
+You have an Azure container registry named Registry1.
+You enable the admin user for Registry1.
 Which username should you use to connect to Registry1 as an admin user?
 
 root
 Admin
 Administrator
-Registry 1
-Registry 1.azurecr.io
+Registry1
+Registry1.azurecr.io
 
 Ans: Registry 1
 
@@ -1492,10 +1492,10 @@ Ans: application settings for Contoso2023-Slot1
 
 Question 4 of 28
 You plan to deploy the Azure web apps:
-• WebApp1. that runs on Windovvs Server 2016
-• WebApp2. that runs on Windows Server 2022
-• WebApp3. that runs onthat runs Ubuntu Server
-• WebApp4. that runs on Red Hat Enterprise Linux
+• WebApp1, that runs on Windows Server 2016
+• WebApp2, that runs on Windows Server 2022
+• WebApp3, that runs on that runs Ubuntu Server
+• WebApp4, that runs on Red Hat Enterprise Linux
 You need to create the app service plans for the web apps.
 What is the nurnber of app service plans that should be created?
 1
@@ -1520,7 +1520,7 @@ Ans:
 Azure Container Registry 
 Azure App service
 
-estuon 6 of 28
+Question 6 of 28
 You plan to create an Azure container instance named container1 that will use a Docker image named Image1.
 You need to ensure that container1 has persistent storage.
 Which Azure resources should you deploy for the persistent storage?
@@ -1565,10 +1565,11 @@ blobs and files only
 files and queues only
 blobs, files, tables, and queues
 
-Ans: blobs and files only
+Ans: blobs, files, tables, and queues
 
 Question 9 of 28
-You have an Azure Storage account named storage1. You need to provide time-limited access to storage1. 
+You have an Azure Storage account named storage1. 
+You need to provide time-limited access to storage1. 
 What should you use? 
 Select only one answer. 
 
@@ -1702,7 +1703,7 @@ You have a proximity placement group named Proximityl.
 You plan to create the following Azure resources:
 
 a virtual machine named vm1
-a disk named Diskl
+a disk named Disk1
 a virtual network named VNET1
 a public IP address named IP1
 Which resources can you place in Proximity1 ?
@@ -1831,7 +1832,7 @@ Question 24 of 28
 You have an Azure subscription that contains an Azure container registry named Contos02020.
 You plan to create an Azure Kubernetes Service (AKS) cluster named AKS1 that has the following settings:
 • Kubernetes version: 122.4
-• Node pools:l
+• Node pools:1
 • Virtual nodes: Disabled
 • Authentication method: Service principal
 • Network configuration: Basic
@@ -1848,7 +1849,7 @@ you should modify the Authentication method. Specifically,
 you should use a managed identity instead of a service principal. 
 Managed identities simplify the process of integrating AKS with Azure Container Registry (ACR) by automatically handling the necessary permissions.
 
-Question of
+Question of 25 of 28
 You plan to create an Azure Kubernetes cluster that will use the following settings:
 • Kubernetes cluster name: Kubernetes1
 • Cluster preset configuration: Standard ($$)
@@ -2005,12 +2006,12 @@ Select only one answer.
 Ans: a recovery services vault
 
 Question 24 of 28
-You have an Azure Kubernetes Service (AKS) cluster named AKSI that runs Kubernetes version 1.16.10.
+You have an Azure Kubernetes Service (AKS) cluster named AKS1 that runs Kubernetes version 1.16.10.
 You need to ensure that you can run a Windows Server container in AKS1.
 What should you do first?
 
 Add a node pool to AKS1.
-Modify the networking settings of AKSI.
+Modify the networking settings of AKS1.
 Integrate AKS1 and the Azure container registry.
 Upgrade AKS1 to a newer version of Kubernetes.
 
@@ -2029,7 +2030,3 @@ Userl and User3 Only
 User 1, User2 and User3
 
 Ans: Userl and User3 Only
-
-
-
-
