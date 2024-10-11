@@ -142,9 +142,7 @@ Select only one answer.
 4. file only
 5. table and queue only
 
-Ans: blob and file only
-Explaination: Customer-managed keys (Scope2) are indeed used for scenarios where you want more control over the encryption keys. 
-Azure Blob Storage and Azure File Storage support customer-managed keys, allowing you to manage and rotate your own keys.
+Ans:blob, file, table, and queue
 
 #### Question 9 of 26
 You have an Azure Storage account named storage1 that is configured to use the Hot access tier.
