@@ -1160,7 +1160,7 @@ Select only one answer.
 3. Add an extension to VM1.
 4. Modify the address space of VNET1.
 
-Ans: Modify the address space of VNET1.
+Ans: Add a new subnet to VNET1.
 
 Question 20 of 28
 You have an Azure virtual machine named Computer5 and a Recovery Services vault named Vault5. Computer5 contains the following data disks:
